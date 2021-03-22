@@ -262,7 +262,9 @@
 
     .header__menu {
         position: static;
-        padding: 20px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
     }
 
     .burger{
