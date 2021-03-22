@@ -551,8 +551,15 @@
     .simplebar-scrollbar:before {
         background: #9d5cd0;
         border-radius: 0;
+        opacity: 1;
         height: auto;
         width: 2px;
+        transition: .3s linear;
+    }
+
+    .simplebar-scrollbar.simplebar-visible:before {
+        opacity: 1;
+        transition: .3s linear;
     }
 
     .simplebar-track.simplebar-vertical {
