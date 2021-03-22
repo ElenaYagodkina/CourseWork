@@ -1,0 +1,236 @@
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__slider-content {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero__heading {
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero__text {
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-slider {
+  background-size: cover;
+  animation: backgroundAnimation 20s linear infinite;
+}
+
+.hero-slide1 {
+  background: url('../img/birmingham-museums.jpg') no-repeat; 
+}
+  
+.hero-slide2 {
+  background: url('../img/birmingham-museums2.jpg') no-repeat;
+}
+  
+.hero-slide3 {
+  background: url('../img/birmingham-museums3.jpg') no-repeat;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-size:100% 100%; 
+  }
+  50% {
+    background-size:110% 110%;
+  }
+  100% {
+    background-size:100% 100%;
+  }
+}
+
+.hero__btn {
+  background-color: #9D5CD0;
+  border: 3px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  z-index: 2;
+  transition:all .4s linear; 
+}
+
+.hero__btn:focus {
+  border:3px solid #7943a4;
+  background-color:#9d5cd0;
+  transition:all .4s linear;
+}
+
+.hero__btn:hover {
+  border:3px solid #d1a9f0;
+  transition:all .4s linear;
+  background-color:#7943a4;
+}
+
+.hero__btn:active {
+  border:3px solid #d1a9f0;
+  background-color:#7943a4;
+  transition:all .4s linear; 
+}
+
+.select-artist:focus {
+  border-color:#9d5cd0;
+  transition:border-color 0.2s linear;
+}
+
+@media (min-width: 320px) {
+  .hero {
+    margin-bottom: 96px;
+  }
+
+  .hero-slider {
+    height: 355px;
+  }
+  .hero__container {text-align: center;}
+
+  .hero__slider-content {
+    top: -45px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 100%;
+  }
+
+  .hero__heading {
+    font-size: 32px;
+    width: 258px;
+    text-align: center;
+    padding-top: 34px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+
+  .hero__text {
+    width: 265px;
+    line-height: 16.34px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .hero__btn {
+    padding: 12px 23px;
+    font-size: 12px;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-bottom: 201px;
+  }
+
+  .hero__slider-content {
+    top: -162px;
+  }
+
+  .hero-slider {
+    height: 768px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 87%;
+  }
+
+  .hero__container {
+    text-align: left;
+}
+
+  .hero__heading {
+    width: 585px;
+    font-size: 72px;
+    text-align: left;
+    padding-top: 50px;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  .hero__text {
+    width: 661px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: .9px;
+    margin: 0;
+    margin-bottom: 133px;
+  }
+
+  .hero__btn {
+    padding: 22px 33px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .hero-slider {
+    height: 768px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 87%;
+  }
+
+  .hero__heading {
+    padding-top: 48px;
+    width: 597px;
+    font-size: 72px;
+  }
+
+  .hero__text {
+    width: 656px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  
+}
+
+@media (min-width: 1900px) {
+  .hero {
+    margin-bottom: 205px;
+  }
+  
+  .hero-slider {
+    height: 800px;
+  }
+
+  .hero__slider-content {
+    top: -170px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 100%;
+  }
+
+  .hero__heading {
+    padding-top: 74px;
+    margin-bottom: 20px;
+    font-size: 72px;
+    width: 597px;
+  }
+
+  .hero__text {
+    width: 565px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-bottom: 93px;
+  }
+
+  .hero__btn {
+    padding: 22px 35px;
+  }
+
+  .slider1 {
+    width: 100%;
+  }
+}

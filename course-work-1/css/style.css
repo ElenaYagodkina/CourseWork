@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+    url('../fonts/OpenSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+  
+body {
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    margin: 0 auto;
+}
+  
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+    outline: #7943a4;
+}
+
+p {
+    margin: 0;
+}
+  
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.section__heading {
+    font-weight: 400;
+}
+
+@media (min-width: 320px) {
+    .container {
+        width: 290px;
+    }
+
+    .section__heading {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 668px;
+    }
+
+    .section__heading {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 924px;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .container {
+        width: 1600px;
+    }
+}

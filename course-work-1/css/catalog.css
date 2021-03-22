@@ -1,0 +1,446 @@
+
+.btn-france {
+    background: url('../img/flag1.png') no-repeat;
+    background-size: cover;
+}
+
+.btn-germany {
+    background: url('../img/flag2.png') no-repeat;
+    background-size: cover;
+}
+
+.btn-italy {
+    background: url('../img/flag3.png') no-repeat;
+    background-size: cover;
+}
+
+.btn-russian {
+    background: url('../img/flag4.png') no-repeat;
+    background-size: cover;
+}
+
+.btn-spain {
+    background: url('../img/flag5.png') no-repeat;
+    background-size: cover;
+}
+
+.catalog__content {
+    display: flex;
+}
+
+.catalog__heading-list {
+    display: flex;
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tablinks {
+    border-radius: 100%;
+    border: none;
+    position: relative;
+    transition: .4s linear;
+}
+
+.tablinks.active::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #9D5CD0;
+    border-radius: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    left:50%;
+    animation: anim .4s linear 1;
+}
+
+.tablinks:hover,
+.tablinks:focus {
+    box-shadow: 0 0 20px #9D5CD0;
+    transition: box-shadow .4s linear;         
+}
+
+.tablinks.active {
+    box-shadow: none;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.date-artist {
+    font-size: 12px;
+    color: #999;
+}
+
+.accordion .catalog__accordion-item {
+    border: none;
+    border-bottom: 1px solid #cacaca;
+}
+
+.accordion .catalog__accordion-item:first-child {
+    border-top: 1px solid #cacaca;
+}
+  
+.accordion .catalog__accordion-item .catalog__btn {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    text-align: start;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.accordion .ui-icon {
+    content: '';
+    position: absolute;
+    background: url('../img/Rectangle.svg') no-repeat center;
+    right: 0;
+    border-radius: 50%;
+    background-size: 40%;
+    width: 30px;
+    height: 30px;
+    background-color: #ececec;
+    transition: .4s linear;
+}
+
+.catalog__btn:hover > .ui-icon {
+    background-color: #9D5CD0;
+    transition: background-color .4s linear;
+}
+
+.catalog__accordion-item .catalog__btn:hover {
+    color: #9d5cd0;
+    border: 1px solid #7943A4;
+    transition: border .4s linear;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: 'OpenSans';
+}
+
+.artistName:hover {
+    color:#9d5cd0;
+    border-bottom: 1px solid #9d5cd0;
+    font-weight: 600;
+    transition:all .4s linear;
+}
+
+.artistName:active {
+    color: #7943A4;
+    border-bottom: none;
+    transition:all .4s linear;
+}
+
+.artistName:focus {
+    color: #000;
+    border: 2px solid #9d5cd0;
+    transition: all .4s linear;
+}
+
+.artistName.active {
+    color: #7943A4;
+    font-weight: 600;
+}
+  
+.accordion .ui-accordion-header-active .ui-accordion-header-icon {
+    transform: rotate(180deg);
+}
+
+.ui-widget-content {
+    border: none;
+}
+
+.ui-state-active {
+    color: #000;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding-left: 0;
+    border-top: 1px solid #cacaca;
+    padding-top: 19px;
+    line-height: 32px;
+}
+
+.artistName {
+    padding-left: 0;
+    border: none;
+    background-color: #fff;
+    transition: .4s linear;
+}
+
+.ui-widget button {
+    font-weight: 400;
+}
+
+.catalog__foto-artist {
+    background-color: blanchedalmond;
+}
+
+.catalog__foto-artist img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 320px) {
+    .catalog {
+        margin-bottom: 53px;
+    }
+    
+    .catalog__heading-list {
+        flex-direction: column;
+    }
+
+    .catalog__list {
+        margin-bottom: 17px;
+    }
+
+    .tablinks {
+        width: 32px;
+        height: 32px;
+        margin-top: 16px;
+    }
+
+    .catalog__language:not(:nth-child(5)) {
+        margin-right: 32px;
+    }
+
+    .catalog__text {
+        display: none;
+    }
+
+    .catalog__content {
+        flex-direction: column-reverse;
+    }
+
+    .catalog__foto-artist {
+        margin-bottom: 23px;
+        width: 290px;
+        height: 181px;
+    }
+
+    .name-artist {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: .7px;
+    }}
+
+    .catalog__about-artist {
+        padding-top: 5px;
+        width: 289px;
+        line-height: 32px;
+    }
+
+    .catalog__accordion {
+        margin-bottom: 50px;
+        width: 290px;
+    }
+
+    .accordion .catalog__accordion-item .catalog__btn {
+        padding-top: 27px;
+        padding-bottom: 25px;
+        padding-left: 0;
+        font-size: 17px;
+        letter-spacing: .5px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding-left: 0;
+        padding-top: 19px;
+    }
+
+    .tablinks.active::after {
+        width: 42px;
+        height: 42px;
+    }
+
+    @keyframes anim {
+        0% {
+            width: 32px;
+            height: 32px;  
+        }
+        50% {
+            width: 38px;
+            height: 38px;
+        }
+        100% {
+            width: 42px;
+            height: 42px;
+        }
+    }
+
+@media (min-width: 768px) {
+    .catalog {
+        margin-bottom: 75px;
+    }
+
+    .catalog__heading-list {
+        flex-direction: row;
+    }
+
+    .catalog__heading {
+        margin-right: 40px;
+        margin-bottom: 21px;
+    }
+
+    .catalog__list {
+        padding-top: 7px;
+    }
+
+    .tablinks {
+        width: 46px;
+        height: 46px;
+        margin-top: 0px;
+    }
+
+    .catalog__language:not(:nth-child(5)) {
+        margin-right: 54px;
+    }
+
+    .catalog__text {
+        display: block;
+        width: 669px;
+        line-height: 32px;
+    }
+
+    .catalog__content {
+        padding-top: 20px;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding-top: 25px;
+    }
+
+    .catalog__foto-artist {
+        margin-bottom: 33px;
+        width: 668px;
+        height: 419px;
+    }
+
+    .name-artist {
+        margin-bottom: 9px;
+    }
+
+    .catalog__about-artist {
+        padding-top: 7px;
+        width: 667px;
+    }
+
+    .catalog__accordion {
+        width: 668px;
+    }
+
+    .accordion .catalog__accordion-item .catalog__btn {
+        padding-top: 40px;
+        padding-bottom: 45px;
+        font-size: 24px;
+        font-weight: 400;
+    }   
+
+    .accordion .ui-icon {
+        right: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .tablinks.active::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    @keyframes anim {
+        0% {
+            width: 46px;
+            height: 46px;  
+        }
+        50% {
+            width: 55px;
+            height: 55px;
+        }
+        100% {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .catalog {
+        margin-bottom: 80px;
+    }
+
+    .tablinks {
+        margin-top: 6px;
+    }
+
+    .catalog__language:not(:nth-child(5)) {
+        margin-right: 50px;
+    }
+
+    .catalog__text {
+        display: block;
+        width: 925px;
+    }
+
+    .catalog__content {
+        padding-top: 37px;
+        flex-direction: row;
+    }
+
+    .catalog__foto-artist {
+        margin-top: 0;
+        width: 437px;
+        height: 274px;
+    }
+
+    .catalog__about-artist {
+        width: 436px;
+    }
+
+    .catalog__info-artist {
+        margin-right: 50px;
+    }
+
+    .catalog__accordion {
+        width: 437px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .catalog__heading {
+        margin-right: 42px;
+        margin-top: 5px;
+    }
+
+    .catalog__text {
+        width: 1080px;
+    }
+
+    .catalog__foto-artist {
+        width: 750px;
+        height: 470px;
+    }
+
+    .catalog__about-artist {
+        width: 750px;
+    }
+
+    .catalog__accordion {
+        width: 800px;
+    }
+
+    .accordion .ui-icon {
+        right: -1px;
+    }
+}
+
+
+

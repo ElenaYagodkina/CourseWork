@@ -1,0 +1,326 @@
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider3 {
+    flex-wrap: wrap;
+}
+
+.events-swiper {
+    padding-top: 0;
+    height: max-content;
+} 
+
+.events__card {
+    position: relative;
+    border: 1px solid #cacaca;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.btn-click {
+    display: none;
+}
+
+.events-span {
+    position: relative;
+    display: block;
+    line-height: 16px;
+    text-align: right;
+    font-weight: 400;
+    font-size: 12px;
+    color: #999;
+}
+
+.sobytia__card-heading {
+    line-height: 33px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.events__text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333;
+}
+
+.events__btn {
+    display: block;
+    position: absolute;
+    border: 2px solid #fff;
+    padding: 0;
+    line-height: 23px;
+    color: #9d5cd0;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid  #9d5cd0;
+    transition:all .4s linear;
+}
+
+.events__btn:focus {
+    border:1px solid #7943a4;
+    transition:all .4s linear;
+}
+  
+.events__btn:hover,
+.events__btn:active {
+    color: #7943a4;
+    transition:all .4s linear; 
+}
+
+.events__btn:hover {
+    font-weight:700;
+    transition:all .4s linear
+}
+
+.events__card .events__btn:focus {
+    outline:2px solid #7943a4;
+}
+
+.toggler-btn:hover {
+    color:#fff;
+    background-color:#9d5cd0;
+    transition:all .4s linear;
+}
+
+.toggler-btn:active {
+    border:3px solid #d1a9f0;
+    background-color:#7943a4;
+    transition:all .4s linear;
+}
+
+.toggler-btn:focus {
+    border:3px solid #d1a9f0;
+    color:#fff;
+    background-color:#9d5cd0;
+    transition:all .4s linear;
+}
+
+
+@media (min-width: 320px) {
+    .events {
+        margin-bottom: 31px;
+    }
+
+    .events__heading {
+        margin-bottom: 15px;
+    }
+    
+    .events-swiper {
+        width: 290px;
+    }
+    
+    .events__img {
+        width: 290px;
+        height: 200px;
+    }
+
+	.events__card {
+		flex-shrink: 0;
+        height: 683px;
+    }
+
+    .sobytia__card-heading {
+        margin-bottom: 37px;
+    }
+
+    .events__text {
+        width: 235px;
+    }
+
+    .events__btn {
+        bottom: 48px;
+    }
+    
+    .toggler-btn {
+        display: none;
+    }
+
+	.slider3 {
+		justify-content: initial;
+		flex-wrap: nowrap;
+	}
+
+    .events__card-info {
+        padding: 14px 8px 89px 27px;
+    }
+
+    .events-pagination {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: -34px;
+        transition: .3s opacity;
+        transform: translate3d(0,0,0);
+        z-index: 10;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        background: #666;
+        opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+        background: #666;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .events {
+        margin-bottom: 70px;
+    }
+
+    .events-swiper {
+        width: 668px;
+        margin-top: 20px;
+    }
+
+    .events__card-info {
+        padding: 12px 17px 89px 33px;
+    }
+
+    .events__card {
+        width: 317px;
+        margin-right: 0;
+    }
+
+    .events__card:nth-child(odd) {
+        margin-right: 34px;
+    }
+
+    .events__img {
+        width: 317px;
+        height: 200px;
+    }
+
+    .events-span {
+        margin-bottom: 3px;
+    }
+
+    .sobytia__card-heading {
+        margin-bottom: 2px;
+        width: 255px;
+    }
+
+    .events__text {
+        width: 243px;
+    }
+
+    .events__btn {
+        bottom: 48px;
+    }
+
+    .toggler-btn {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 600;
+        color: #9d5cd0;
+        background-color: transparent;
+        padding: 17px 35px;
+        border: 2px solid #9d5cd0;
+        border-radius: 30px;
+        transition:all .4s linear;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .events-swiper {
+        width: 925px;
+    }
+
+    .events__img {
+        width: 290px;
+        height: 200px;
+    }
+
+    .events-span {
+        margin-top: -3px;
+    }
+
+    .events__card {
+        width: 290px;
+        height: 683px;
+    }
+
+    .sobytia__card-heading {
+        width: 240px;
+    }
+
+    .events__card:nth-child(even) {
+        margin-right: 27px;
+    }
+
+    .events__card:nth-child(odd) {
+        margin-right: 27px;
+    }
+
+    .events__card:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .events__card-info {
+        padding: 14px 17px 89px 35px;
+    }
+
+    .events__text {
+        width: 222px;
+    }
+
+    .events__btn {
+        bottom: 50px;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .events-swiper {
+        width: 1600px;
+    }
+
+    .events__card {
+        width: 500px;
+        height: 700px;
+    }
+
+    .events__card:not(:nth-child(3n+3)) {
+        margin-right: 50px;
+    }
+
+    .events-swiper {
+        padding-top: 0;
+        width: 1600px;
+    }
+
+    .events__img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .events__card-info {
+        padding: 14px 17px 89px 50px;
+    }
+
+    .sobytia__card-heading {
+        width: 401px;
+    }
+
+    .events__text {
+        width: 400px;
+    }
+
+    .events__btn {
+        bottom: 42px;
+    }
+}

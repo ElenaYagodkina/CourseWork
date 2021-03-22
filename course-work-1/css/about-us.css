@@ -1,0 +1,46 @@
+@media (min-width: 320px) {
+    .about-us {
+        margin-bottom: 40px;
+    }
+    .about-us__heading {
+        margin-bottom: 15px;
+    }
+    
+    .about-us__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        margin-bottom: 70px;
+    }
+    .about-us__heading {
+        margin-bottom: 21px;
+    }
+
+    .about-us__text {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-us__text {
+        font-size: 16px;
+        line-height: 32px;
+        width: 925px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .about-us__text {
+        width: 1080px;
+    }
+
+    .about-us__heading {
+        margin-bottom: 19px;
+    }
+
+}

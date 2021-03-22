@@ -1,0 +1,378 @@
+
+.contacts {
+    position: relative;
+    border-top: 1px solid #cacaca;
+}
+
+.contacts-container {
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form {
+    border-radius: 100px;
+    border: 1px solid #333333;
+}
+
+.contacts__name {
+    font-weight: 400;
+    display: block;
+}
+
+.contacts__address {
+    display: block;
+    font-weight: 400;
+}
+
+.contacts__span {
+    display: block;
+    font-weight: 400;
+    color: #333;
+}
+
+.contacts__btn {
+    font-weight: 600;
+    align-items: center;
+    border: 2px solid #9d5cd0;
+    border-radius: 100px;
+    color: #9d5cd0;
+    background-color: #fff;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.ymaps-2-1-78-gotoymaps__text,
+.ymaps-2-1-78-map-copyrights-promo,
+.ymaps-2-1-78-copyright__link {
+    display: none;
+}
+
+.contacts__btn:hover {
+    color:#fff;
+    background-color:#9d5cd0;
+    transition:all .4s linear;
+}
+
+.contacts__btn:active {
+    border:3px solid #d1a9f0;
+    background-color:#7943a4;
+}
+
+.contacts__btn:focus {
+    border:3px solid #d1a9f0;
+    color:#fff;
+    background-color:#9d5cd0;
+    transition:all .4s linear;
+}
+
+.contacts__social {
+    display: flex;
+}
+
+.contacts__icon {
+    transition: .4s;
+}
+
+.contacts__icon:hover,
+.contacts__icon:active {
+    opacity: .5;
+    transition: opacity .4s linear;
+
+}
+
+.whatsapp {
+    background: url('../img/Whatsapp.svg') no-repeat;
+    background-size: cover;
+}
+
+.telegram {
+    background: url('../img/Telegram.svg') no-repeat;
+    background-size: cover;
+}
+
+.button-zoom {
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px rgb(0 0 0 / 15%), 0 -4px 5px -3px rgb(0 0 0 / 15%);
+}
+
+.btn-plus, .btn-minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+} 
+
+.btn-plus {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+.btn-minus {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.icon-plus, .icon-minus, .arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+}
+
+.icon-plus {
+    background: url('../img/plus-solid.svg') no-repeat;
+}
+
+.icon-minus {
+    background: url('../img/minus-solid.svg') no-repeat;
+}
+
+.btn-geocontrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 1px rgb(0 0 0 / 15%), 0 -4px 5px -3px rgb(0 0 0 / 15%);
+}
+
+.arrow {
+    background: url('../img/location-arrow.svg') no-repeat;
+}
+
+.js-validate-error-label {
+    margin-top: -20px;
+  }
+
+
+@media (min-width: 320px) {
+    .contacts-container {
+        flex-direction: column-reverse;
+    }
+
+    .contacts__content {
+        margin: 0 auto;
+        padding-top: 23px;
+        width: 91%;
+    }
+
+    .contacts__heading {
+        margin-bottom: 18px;
+        padding-top: 52px;
+    }
+
+    .contacts__address {
+        font-size: 13px;
+        margin-bottom: 19px;
+        padding-top: 4px;
+    }
+
+    .contacts__span {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .span-click {
+        margin-bottom: 17px;
+    }
+
+    .contacts__name {
+        font-size: 18px;
+    }
+
+    .input-form {
+        width: 290px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding-left: 24px;
+    }
+
+    .contacts__form {
+        width: 682px;
+        border: none;
+    }
+
+    .contacts__btn {
+        margin-bottom: 24px;
+        border: 2px solid #9d5cd0;
+        border-radius: 100px;
+        width: 127px;
+        height: 39px;
+        font-weight: 700;
+        font-size: 12px;
+        text-align: center;
+        color: #9d5cd0;
+        background: none;
+        transition: all .4s linear;
+    }
+
+    .myMap {
+        height: 320px;
+    }
+
+    .contacts__social {
+        margin-bottom: 28px;
+    }
+
+    .contacts__icon {
+        margin-right: 20px;
+        width: 48.5px;
+        height: 48.5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts-container {
+        flex-direction: row;
+        padding-left: 50px;
+    }
+
+    .contacts__content {
+        padding-top: 125px;
+        width: 382px;
+    }
+
+    .contacts__heading {
+        margin-bottom: 21px;
+        padding-top: 88px;
+    }
+
+    .contacts__span {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .contacts__name {
+        margin-bottom: 8px;
+        font-size: 24px;
+        letter-spacing: .5px;
+    }
+
+    .contacts__address {
+        margin-bottom: 37px;
+        font-size: 16px;
+    }
+
+    .input-form {
+        margin-bottom: 21px;
+        width: 307px;
+        height: 37px;
+        padding-left: 24px;
+    }
+
+    .contacts__form {
+        width: 430px;
+    }
+
+    .contacts__btn {
+        width: 158px;
+        height: 58px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .myMap {
+        width: 338px;
+        height: 700px;
+    }
+
+    .contacts__social {
+        margin-bottom: 0;
+    }
+
+    .contacts__icon {
+        margin-right: 31px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contacts-container {
+        justify-content: center;
+    }
+
+    .contacts__content {
+        margin-right: 54px;
+        margin-left: 0;
+    }
+
+    .contacts__span {
+        margin-bottom: 18px;
+    }
+
+    .contacts__form {
+        width: 430px;
+    }
+
+    .input-form {
+        width: 306px;
+        height: 35px;
+        margin-bottom: 23px;
+        padding-left: 24px;
+    }
+
+    .contacts__btn {
+        width: 157px;
+        height: 60px;
+    }
+
+    .myMap {
+        width: 537px;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    .contacts-container {
+        padding-left: 150px;
+    }
+
+    .contacts__content {
+        margin-right: 139px;
+        margin-left: 10px;
+    }
+
+    .contacts__form {
+        width: 682px;
+    }
+
+    .contacts__span {
+        font-size: 24px;
+    }
+
+    .input-form {
+        width: 370px;
+        height: 35px;
+    }
+
+    .myMap {
+        width: 1238px;
+    }
+
+    .contacts__icon {
+        margin-right: 21px;
+        width: 40px;
+        height: 40px;
+    }
+
+}
