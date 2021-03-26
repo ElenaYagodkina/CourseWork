@@ -21,7 +21,8 @@
 
 #check1, #check2, #check3,
 #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11, #check12 {
-  display: none;
+    display: none;
+    position: absolute;
 }
 
 
@@ -164,136 +165,95 @@
     background-image: url('../img/next.svg');
 }
 
-.publications-checkbox .label:hover {
-    color: #c283f3;
-    transition: all .4s linear;
-}
-
-.publications-checkbox .label:hover::before,
-.publications-checkbox .label:focus::before {
-    border-color: #c283f3;
-    transition: all .4s linear;
-}
-
-.publications-checkbox .label:active {
-    color: #7943a4;
-    transition: all .4s linear;
+.publications-button-prev,
+.publications-button-next{
+    border: 2px solid transparent; 
+    transition:background-color .4s linear;
 }
 
 .publications-button-prev:hover,
 .publications-button-next:hover {
     background-color: #7943a4; 
-    transition: all .4s linear;
+    transition:background-color .4s linear;
 }
 
 .publications-button-prev:active,
 .publications-button-next:active {
-    border:2px solid #7943A4;
-    transition:border-color 0.4s linear;
+    border: 2px solid #d1a9f0;
+    background-color: #7943a4;
+    transition: all .4s linear; 
 }
 
 .publications-button-prev:focus,
 .publications-button-next:focus {
-    background-color: #7943a4; 
-    transition: all .4s linear;
+    border: 2px solid #7943a4;
+    transition: border .4s linear; 
 }
 
-.input-check:checked+.label::before {
-    border-color:#c283f3;
-    transition:all .4s linear;
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
 }
 
-.input-check:checked+.label::after {
-    display:block;
-    background-color:#c283f3;
-    transition:all .4s linear;
+.checkbox-list-item:focus,
+.custom-checkbox__text:focus {
+    outline: 2px solid #7943a4;
 }
 
-.input-check:checked+.label {
-    color: #c283f3;
-    transition: all .4s linear;
-}
 
-.input-check[type="checkbox"]:focus+.label::before {
-    outline: 3px solid #9d5cd0;
-    border: none;
-}
-
-.label {
-    position: relative;
-    display: block;
-    margin-bottom: 14px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    color:#fff;
-    transition: all .4s linear;
-    cursor: pointer;
-    border-bottom:1px solid rgba(255,255,255,0.5);
-}
-
-.label::before {
-    content:"";
+.custom-checkbox__text::before {
+    content: "";
     position: absolute;
     left: 0;
-    display: inline-block;
-    margin-top: 3px;
-    border: 1px solid #fff;
-    width: 10px;
-    height: 10px;
-    background: none;
-    transition: all .4s linear;
+    top: 50%;
+    border: 1px solid currentColor;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
 }
 
-.label::after {
-    content:"";
+.input-check:checked + .custom-checkbox__text::after {
+    background-color: #9d5cd0;
+    transition: color 0.3s linear;
+}
+
+.custom-checkbox__text::after {
+    content: "";
     position: absolute;
-    display: none;
+    left: 7px;
+    top: 50%;
     border-radius: 50%;
     width: 4px;
     height: 4px;
-    background-color: #fff;
-    transition: all .4s linear;
+    background-color: transparent;
+    transform: translate(-50%,-50%);
 }
 
-.input-check:checked+.label::before {
-    border-color:#c283f3;
-    transition:all .4s linear;
+.custom-checkbox__text {
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    transition: color .3s;
 }
 
-.input-check:checked+.label::after {
-    display: block;
-    background-color: #c283f3;
-    transition: all .4s linear;
+.input-check:checked + .custom-checkbox__text {
+    color: #9d5cd0;
+    transition: color 0.3s linear;
 }
 
-.input-check:checked+.label {
+.custom-checkbox__text:hover {
     color: #c283f3;
     transition: all .4s linear;
 }
 
-.input-check[type="checkbox"]:focus+.label::before {
-    outline: 3px solid #9d5cd0; 
-    border: none;
-    transition: all .4s linear;
+.label-check.cheking {
+    color: #C283F3;
 }
 
-.label:hover {
-    color: #c283f3;
-    transition: all .4s linear;
-}
-
-.label:hover::before {
-    border-color: #c283f3;
-    transition: all .4s linear;
-}
-
-.label:active {
+.custom-checkbox__text:active {
     color: #7943a4;
-    transition: all .4s linear;
-}
-
-.label:active::before {
-    border-color: #7943a4;
     transition: all .4s linear;
 }
 
@@ -304,7 +264,7 @@
     display: inline-block;
     font-size: 27px;
     color: rgba(194,131,243,0);
-    transition: color 0.2s linear;
+    transition: color 0.3s linear;
 }
 
 .label:first-child {
@@ -313,7 +273,7 @@
 
 .input-check:checked+.label span {
     color: #c283f3;
-    transition: color 0.2s linear;
+    transition: color 0.3s linear;
 }
 
 .categories {
@@ -345,49 +305,6 @@
     width: 8px;
     height: 8px;
     transform: rotate(-45deg);
-}
-
-.categories:focus {
-    color: #7943a4;
-}
-
-.categories:focus::before {
-    border-bottom: 1px solid #7943a4;
-    border-left: 1px solid #7943a4;
-    transition: all .4s linear;
-}
-
-.categories:hover {
-    color: #9d5cd0;
-    transition: all .4s linear;
-}
-
-.categories:hover::before {
-    border-bottom: 1px solid #d1a9f0;
-    border-left: 1px solid #d1a9f0;
-    transition: all .4s linear;
-}
-
-.categories.active::before {
-    margin-top: 7px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
-    border-bottom: none;
-    border-left: none;
-    transform: rotate(-45deg);
-}
-
-.categories.active:focus::before {
-    border-top: 1px solid #7943a4;
-    border-right: 1px solid #7943a4;
-    transition: all .4s linear;
-}
-
-.categories.active:hover::before {
-    border-top: 1px solid #d1a9f0;
-    border-right: 1px solid #d1a9f0;
-    transition: all .4s linear;
-    
 }
 
 .publications-span {

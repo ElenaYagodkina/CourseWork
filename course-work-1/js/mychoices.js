@@ -63,3 +63,6 @@ const editAccAdapt = function () {
 
 
 
+document.addEventListener('keypress', (e) => {
+  e.target.click();
+});

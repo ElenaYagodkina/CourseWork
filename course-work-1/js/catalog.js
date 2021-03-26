@@ -69,3 +69,4 @@ flag.forEach((selectedFlag) => selectedFlag.addEventListener('click',() => {
         $('.accordion').accordion({active: 4 });
     }
     }))
+    

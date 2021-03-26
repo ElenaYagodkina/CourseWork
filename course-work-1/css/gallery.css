@@ -135,6 +135,7 @@
 
 .swiper-pagination-fraction {
     position: absolute;
+    width: 100%;
     color: #fff;
     z-index: 0;
 }

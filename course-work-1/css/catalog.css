@@ -115,7 +115,8 @@
 
 .catalog__accordion-item .catalog__btn:hover {
     color: #9d5cd0;
-    border: 1px solid #7943A4;
+    border-top: 1px solid #7943A4;
+    border-bottom: 1px solid #7943A4;
     transition: border .4s linear;
 }
 
@@ -126,7 +127,7 @@
 .artistName:hover {
     color:#9d5cd0;
     border-bottom: 1px solid #9d5cd0;
-    font-weight: 600;
+    text-shadow: 0 0 .6px #9d5cd0, 0 0 .6px #9d5cd0;
     transition:all .4s linear;
 }
 
@@ -339,7 +340,7 @@
         padding-top: 40px;
         padding-bottom: 45px;
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 600;
     }   
 
     .accordion .ui-icon {

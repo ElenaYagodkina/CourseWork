@@ -34,7 +34,6 @@ btn.forEach((selectedbtn) =>
 })
 
 document.addEventListener('click', (e) => {
-  console.log(e.target)
   if (!e.target.classList.contains('header__style') 
     && !e.target.classList.contains('header__simplebar-content')) {
       drop.forEach(el => {el.classList.remove(('menu-active'))})
