@@ -21,7 +21,7 @@
 
 #check1, #check2, #check3,
 #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11, #check12 {
-    display: none;
+    opacity: 0;
     position: absolute;
 }
 
@@ -58,7 +58,11 @@
     font-weight: 400;
     font-size: 16px;
     color: #fff;
-    background-color: #7943a4;
+    background: rgba(157, 92, 208, 0.5);
+}
+
+.publications--input:focus {
+    outline: 2px solid #7943A4;
 }
 
 .publications__right {
@@ -142,6 +146,11 @@
     display: flex;
 }
 
+.publications-slider-button {
+    display: flex;
+    align-items: center;
+}
+
 .publications-button-prev,
 .publications-button-next {
     background-color: #666;
@@ -153,7 +162,6 @@
     background-repeat: no-repeat;
     background-size: 12px 12px;
     position: static;
-    margin-right: 65px;
     z-index: 11;
     transition:all .4s linear;
 }
@@ -195,13 +203,12 @@
     flex-direction: column;
 }
 
-.checkbox-list-item:focus,
-.custom-checkbox__text:focus {
+.input-check:focus + .checkbox-text {
     outline: 2px solid #7943a4;
 }
 
 
-.custom-checkbox__text::before {
+.checkbox-text::before {
     content: "";
     position: absolute;
     left: 0;
@@ -212,12 +219,12 @@
     transform: translateY(-50%);
 }
 
-.input-check:checked + .custom-checkbox__text::after {
+.input-check:checked + .checkbox-text::after {
     background-color: #9d5cd0;
     transition: color 0.3s linear;
 }
 
-.custom-checkbox__text::after {
+.checkbox-text::after {
     content: "";
     position: absolute;
     left: 7px;
@@ -229,21 +236,22 @@
     transform: translate(-50%,-50%);
 }
 
-.custom-checkbox__text {
+.checkbox-text {
     position: relative;
     padding-left: 25px;
     font-size: 16px;
     line-height: 32px;
     color: #fff;
+    cursor: pointer;
     transition: color .3s;
 }
 
-.input-check:checked + .custom-checkbox__text {
+.input-check:checked + .checkbox-text {
     color: #9d5cd0;
     transition: color 0.3s linear;
 }
 
-.custom-checkbox__text:hover {
+.checkbox-text:hover {
     color: #c283f3;
     transition: all .4s linear;
 }
@@ -252,7 +260,7 @@
     color: #C283F3;
 }
 
-.custom-checkbox__text:active {
+.checkbox-text:active {
     color: #7943a4;
     transition: all .4s linear;
 }
@@ -288,7 +296,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.5);
     width: 100%;
     text-align: left;
-    cursor: pointer;
+    cursor: text;
     transition:background-color .4s linear;
 }
 
@@ -350,9 +358,16 @@
         flex-direction: column;
     }
 
-    .label:after {
-        top: 7px;
-        left: 4px;
+    .checkbox-label {
+        position: relative;
+        display: block;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        width: 290px;
+        color:#fff;
+        transition: all .4s linear;
+        cursor: pointer;
+        border-bottom:1px solid rgba(255,255,255,0.5);
     }
 
     .publications-swiper {
@@ -436,14 +451,11 @@
         background-position: center;
     }
 
-    .label {
+    .checkbox-label {
+        margin-bottom: 0;
         padding-bottom: 0;
+        width: auto;
         border-bottom: none;
-    }
-
-    .label::after {
-        width: 4px;
-        height: 4px;
     }
 
     .categories:hover::before,
@@ -466,11 +478,6 @@
 
     .publications__checkbox-content {
         flex-direction: row;
-    }
-
-    .label::before {
-        width: 10px;
-        height: 10px;
     }
     
     .categories:hover {
@@ -496,13 +503,9 @@
         margin-bottom: 2px;
     }
 
-    .slider-button {
-        display: flex;
-    }
-
     .publications .slider-button {
         position: absolute;
-        display: block;
+        display: flex;
         padding-top: 45px;
         z-index: 11;
     }
@@ -555,14 +558,10 @@
     }
 
     .publications .swiper-pagination-fraction {
+        position: static;
         display: block;
-        left: -44%;
-        bottom: 88.5%;
-    }
-
-    .label::after {
-        left: 4px;
-        top: 7px;
+        font-size: 16px;
+        width: auto;
     }
 }
 
@@ -586,7 +585,6 @@
     }
 
     .publications__left {
-        width: 245px;
         margin-right: 50px;
     }
 
@@ -594,16 +592,8 @@
         flex-direction: column;
     }
 
-    .publications-checkbox {
-        width: 250px;
-    }
-
     .checkbox-select {
         margin-bottom: 27px;
-    }
-
-    .label {
-        padding-left: 20px;
     }
 
     .checkbox-list:not(:last-child) {
@@ -644,11 +634,6 @@
         top: -10px;
     }
 
-    .publications .swiper-pagination-fraction {
-        left: -40%;
-        bottom: 93%;
-    }
-
     .publications .slider-button {
         padding-top: 14px;
     }
@@ -671,7 +656,6 @@
     }
 
     .publications__left {
-        width: 265px;
         margin-right: 185px;
     }
 
@@ -701,15 +685,6 @@
     .publications-span {
         right: 49px;
         top: -6px;
-    }
-
-    .publications .swiper-pagination-fraction {
-        left: -44.5%;
-        bottom: 94%;
-    }
-
-    .publications-button-prev, .publications-button-next {
-        margin-bottom: 65px;
     }
 }
 

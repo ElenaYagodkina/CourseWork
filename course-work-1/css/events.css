@@ -11,10 +11,6 @@
 .events-swiper {
     padding-top: 0;
     height: max-content;
-} 
-
-.swiper-pagination-fraction {
-    width: 100%;
 }
 
 .events__card {
@@ -38,7 +34,7 @@
     color: #999;
 }
 
-.sobytia__card-heading {
+.events__card-heading {
     line-height: 33px;
     font-weight: 600;
     font-size: 24px;
@@ -125,7 +121,7 @@
         height: 683px;
     }
 
-    .sobytia__card-heading {
+    .events__card-heading {
         margin-bottom: 37px;
     }
 
@@ -207,7 +203,7 @@
         margin-bottom: 3px;
     }
 
-    .sobytia__card-heading {
+    .events__card-heading {
         margin-bottom: 2px;
         width: 255px;
     }
@@ -255,7 +251,7 @@
         height: 683px;
     }
 
-    .sobytia__card-heading {
+    .events__card-heading {
         width: 240px;
     }
 
@@ -313,7 +309,7 @@
         padding: 14px 17px 89px 50px;
     }
 
-    .sobytia__card-heading {
+    .events__card-heading {
         width: 401px;
     }
 

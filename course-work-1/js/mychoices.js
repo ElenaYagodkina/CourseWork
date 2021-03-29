@@ -14,38 +14,32 @@ defaultSelect();
 // select-checkbox publications для 320 //
 
 const editAccAdapt = function () {
-  let publicationsCheckAll = document.querySelectorAll('.input-check'),
-    publicationsList3 = document.querySelector('.list3');
+  let publicationsCheckAll = document.querySelectorAll('.checkbox-label'),  
+      publicationsList3 = document.querySelector('.list3');
 
-  [].forEach.call(publicationsCheckAll, function (item) {
-    let publicationsLabelChecked = document.querySelector(`[for="${item.id}"]`);
-    publicationsList3.append(item);
-    publicationsList3.append(publicationsLabelChecked);
+  [].forEach.call(publicationsCheckAll, function (item) {  // перебираем каждый элемент .checkbox-label 
+    publicationsList3.append(item);                        // и добавляем их в конец List3
   });
 
   document.querySelector('.list1').remove();
   document.querySelector('.list2').remove();
 
-  let accEditContent = document.querySelector('.publications-checkbox'),
-    accEditTitle = document.querySelector('.categories');
+  let accEditContent = document.querySelector('.publications-checkbox'),  // контент, содержащий добавляющиеся элементы .checkbox-label
+      accEditTitle = document.querySelector('.categories');   // кнопка 
 
   let accordeonActiveit = function () {
     let publicationsCheckboks = document.querySelector('.checkbox-select');
 
     accEditContent.style.maxHeight = '0px';
 
-    accEditTitle.addEventListener('click', function () {
+    accEditTitle.addEventListener('click', function () {    // при нажатии кнопки 
 
-      [].forEach.call(publicationsCheckAll, function (item) {
+      [].forEach.call(publicationsCheckAll, function (item) {  
 
-        let publicationsLabelChecked = document.querySelector(`[for="${item.id}"]`);
-
-        if (item.checked) {
-          publicationsCheckboks.append(item);
-          publicationsCheckboks.append(publicationsLabelChecked);
+        if (item.childNodes[1].checked) {  // input - второй элемент в родителе, если он checked, 
+          publicationsCheckboks.append(item);  //то добавляем его в чекбокс
         } else {
-          publicationsList3.append(item);
-          publicationsList3.append(publicationsLabelChecked);
+          publicationsList3.append(item); // иначе, добавляем его в конец List3
         }
       })
 
@@ -60,9 +54,3 @@ const editAccAdapt = function () {
   }
   accordeonActiveit();
 };
-
-
-
-document.addEventListener('keypress', (e) => {
-  e.target.click();
-});
