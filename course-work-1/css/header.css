@@ -415,11 +415,6 @@
         padding: 0;
     }
 
-    .header__container-first {
-        padding-top: 28px;
-        padding-bottom: 30px;
-    }
-
     .header__content-second {
         display: flex;
         width: 100%;

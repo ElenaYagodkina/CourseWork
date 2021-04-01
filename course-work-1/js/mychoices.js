@@ -14,11 +14,11 @@ defaultSelect();
 // select-checkbox publications для 320 //
 
 const editAccAdapt = function () {
-  let publicationsCheckAll = document.querySelectorAll('.checkbox-label'),  
-      publicationsList3 = document.querySelector('.list3');
+  let publicationsCheckAll = document.querySelectorAll('.checkbox-list-item'),  
+      publicationslist3 = document.querySelector('.list3');
 
   [].forEach.call(publicationsCheckAll, function (item) {  // перебираем каждый элемент .checkbox-label 
-    publicationsList3.append(item);                        // и добавляем их в конец List3
+    publicationslist3.append(item);                        // и добавляем их в конец list3
   });
 
   document.querySelector('.list1').remove();
@@ -34,12 +34,12 @@ const editAccAdapt = function () {
 
     accEditTitle.addEventListener('click', function () {    // при нажатии кнопки 
 
-      [].forEach.call(publicationsCheckAll, function (item) {  
-
-        if (item.childNodes[1].checked) {  // input - второй элемент в родителе, если он checked, 
-          publicationsCheckboks.append(item);  //то добавляем его в чекбокс
+      [].forEach.call(publicationsCheckAll, function (item) {  // перебираем каждый checkbox-list-item,
+        let inputCheck = document.querySelector('.input-check');// ищем чекнутый инпут, находим и 
+        if (inputCheck.checked) { 
+          publicationsCheckboks.append(item);  // добавляем его в чекбокс
         } else {
-          publicationsList3.append(item); // иначе, добавляем его в конец List3
+          publicationslist3.append(item); // иначе, добавляем его в конец list3
         }
       })
 
@@ -54,3 +54,4 @@ const editAccAdapt = function () {
   }
   accordeonActiveit();
 };
+
