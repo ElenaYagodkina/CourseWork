@@ -59,13 +59,13 @@
     color: #9d5cd0;
     background: transparent;
     cursor: pointer;
-    transition:all .4s linear;
+    transition: border .4s linear, color .4s linear, background .4s linear,  border-bottom .4s linear;
 }
   
 .events__btn:hover,
 .events__btn:active {
     color: #7943a4;
-    transition:all .4s linear; 
+    transition: color .4s linear; 
 }
 
 .events__btn:hover {
@@ -81,20 +81,20 @@
 .toggler-btn:hover {
     color:#fff;
     background-color:#9d5cd0;
-    transition:all .4s linear;
+    transition: background-color .4s linear, color .4s linear;
 }
 
 .toggler-btn:active {
     border:2px solid #d1a9f0;
     background-color:#7943a4;
-    transition:all .4s linear;
+    transition: background-color .4s linear, border .4s linear;
 }
 
 .toggler-btn:focus {
     border:2px solid #d1a9f0;
     color:#fff;
     background-color:#9d5cd0;
-    transition:all .4s linear;
+    transition: background-color .4s linear, border .4s linear, color .4s linear;
 }
 
 
@@ -227,7 +227,7 @@
         padding: 17px 35px;
         border: 2px solid #9d5cd0;
         border-radius: 30px;
-        transition:all .4s linear;
+        transition: border .4s linear, color .4s linear;
 
     }
 }

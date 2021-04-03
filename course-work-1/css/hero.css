@@ -55,30 +55,30 @@
   border-radius: 100px;
   color: #fff;
   z-index: 2;
-  transition:all .4s linear; 
+  transition: border .4s linear, background-color .4s linear, color .4s linear; 
 }
 
 .hero__btn:focus {
   border:3px solid #7943a4;
   background-color:#9d5cd0;
-  transition:all .4s linear;
+  transition: border .4s linear, background-color .4s linear;
 }
 
 .hero__btn:hover {
   border:3px solid #d1a9f0;
-  transition:all .4s linear;
   background-color:#7943a4;
+  transition: border .4s linear, background-color .4s linear;
 }
 
 .hero__btn:active {
   border:3px solid #d1a9f0;
   background-color:#7943a4;
-  transition:all .4s linear; 
+  transition: border .4s linear, background-color .4s linear; 
 }
 
 .select-artist:focus {
   border-color:#9d5cd0;
-  transition:border-color 0.2s linear;
+  transition: border-color 0.2s linear;
 }
 
 @media (min-width: 320px) {

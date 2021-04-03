@@ -124,7 +124,7 @@
 .gallery-button-next:active {
     border: 2px solid #d1a9f0;
     background-color: #7943a4;
-    transition: all .4s linear; 
+    transition: border .4s linear, background-color .4s linear; 
 }
 
 .gallery-button-prev:focus,

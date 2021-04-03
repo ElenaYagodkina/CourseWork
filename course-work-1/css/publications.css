@@ -49,11 +49,16 @@
 
 .publications__form-input {
     border: none;
-    width: 69px;
+    width: 52px;
+    padding: 10px;
     font-weight: 400;
     font-size: 16px;
     color: #fff;
     background: rgba(157, 92, 208, 0.5);
+}
+
+.publications__form-input::placeholder {
+    color: #fff;
 }
 
 .publications__form-input:focus {
@@ -62,10 +67,6 @@
 
 .publications__right {
     position: relative;
-}
-
-.publications__card-info {
-    position: absolute;
 }
 
 .publications__card-heading {
@@ -79,7 +80,6 @@
 }
 
 .publications__btn {
-    position: absolute;
     display: block;
     border: 2px solid #9d5cd0;
     border-radius: 100px;
@@ -158,7 +158,7 @@
     background-size: 12px 12px;
     position: static;
     z-index: 11;
-    transition:all .4s linear;
+    transition: background-color .4s linear, border .4s linear;
 }
 
 .publications-button-prev {
@@ -184,7 +184,7 @@
 .publications-button-next:active {
     border: 2px solid #d1a9f0;
     background-color: #7943a4;
-    transition: all .4s linear; 
+    transition: border .4s linear, background-color .4s linear; 
 }
 
 .publications-button-prev:focus,
@@ -232,7 +232,7 @@
     line-height: 32px;
     color: #fff;
     cursor: pointer;
-    transition: color .3s;
+    transition: color .3s linear;
 }
 
 .input-check:checked + .checkbox-text {
@@ -242,17 +242,17 @@
 
 .input-check:checked + .checkbox-text::after {
     background-color: #9d5cd0;
-    transition: color 0.3s linear;
+    transition: background-color 0.3s linear;
 }
 
 .checkbox-text:hover {
     color: #c283f3;
-    transition: all .4s linear;
+    transition: color .4s linear;
 }
 
 .checkbox-text:active {
     color: #7943a4;
-    transition: all .4s linear;
+    transition: color .4s linear;
 }
 
 .label:first-child {
@@ -340,8 +340,8 @@
         padding-bottom: 5px;
         width: 290px;
         color:#fff;
-        transition: all .4s linear;
         border-bottom:1px solid rgba(255,255,255,0.5);
+        transition: color .4s linear;
     }
 
     .publications-swiper {
@@ -372,10 +372,6 @@
         margin-top: 161px;
     }
 
-    .publications__card-info {
-        top: 105%;
-    }
-
     .slider4 {
         flex-wrap: wrap;
         top: 47px;
@@ -383,20 +379,22 @@
 
     .publications__card-heading {
         width: 130px;
-        padding-top: 3px;
+        padding-top: 120%;
         margin-bottom: 3px;
         font-size: 12px;
+        letter-spacing: .3px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
 
     .publications-span {
-        top: 38px;
+        top: 132%;
     }
     
     .publications__text {
         width: 130px;
+        margin-bottom: 23%;
         font-size: 12px;
         overflow: hidden;
         white-space: nowrap;
@@ -404,7 +402,6 @@
     }
     
     .publications__btn {
-        bottom: -70px;
         font-size: 13px;
         padding: 11px 35px;
     }
@@ -470,7 +467,7 @@
     }
 
     .checkbox-select {
-        margin-bottom: 26px;
+        margin-bottom: 31px;
     }
 
     .publications__form {
@@ -501,34 +498,30 @@
         margin-right: 54px;
     }
 
-    .publications__card-info {
-        top: 105%;
-    }
-
     .publications__btn {
         font-size: 16px;
         left: 0;
         padding: 8px 20px;
-        bottom: -55px;
         letter-spacing: 1px;
     }
 
     .publications__card-heading {
-        padding-top: 0;
+        padding-top: 115%;
         margin-bottom: 4px;
         font-size: 16px;
         letter-spacing: .5px;
     }
     
     .publications__text {
+        margin-bottom: 7%;
         font-size: 16px;
         width: 400px;
     }
 
     .publications-span {
         font-size: 16px;
-        right: 108px;
-        top: 0;
+        right: 0px;
+        top: 105%;
     }
 
     .publications .swiper-pagination-fraction {
@@ -563,7 +556,7 @@
     }
 
     .publications__left {
-        margin-right: 50px;
+        margin-right: 18px;
     }
 
     .publications__checkbox-content {
@@ -583,14 +576,13 @@
     }
 
     .publications__card-heading {
-        margin-top: -11px;
+        padding-top: 116%;
         font-size: 16px;
         width: 152px;
     }
 
     .publications__btn {
-        padding: 8px 20px;
-        bottom: -58px;
+        padding: 9px 20px;
         letter-spacing: 1px;
     }
 
@@ -602,13 +594,9 @@
         height: 320px;
     }
 
-    .publications__card-info {
-        top: 108%;
-    }
-
     .publications-span {
-        right: 109px;
-        top: -10px;
+        right: -1%;
+        top: 105%;
     }
 
     .publications .slider-button {
@@ -617,6 +605,10 @@
 
     .publications__heading {
         padding-top: 33px;
+    }
+
+    .publications__text {
+        margin-bottom: 6%;
     }
 
     .slider4 {
@@ -649,19 +641,18 @@
     }
 
     .publications__card-heading {
-        margin-top: -5px;
+        padding-top: 119%;
         margin-bottom: 5px;
     }
 
     .publications__btn {
         padding: 10px 20px;
-        bottom: -57px;
         font-size: 16px;
     }
 
     .publications-span {
-        right: 49px;
-        top: -6px;
+        right: -1%;
+        top: 107%;
     }
 }
 

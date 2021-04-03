@@ -117,7 +117,7 @@
     color: #9d5cd0;
     border-top: 1px solid #7943A4;
     border-bottom: 1px solid #7943A4;
-    transition: border .4s linear;
+    transition: color .4s linear, border-top .4s linear, border-bottom .4s linear;
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
@@ -128,19 +128,19 @@
     color:#9d5cd0;
     border-bottom: 1px solid #9d5cd0;
     text-shadow: 0 0 .6px #9d5cd0, 0 0 .6px #9d5cd0;
-    transition:all .4s linear;
+    transition: color .4s linear, text-shadow .4s linear, border-bottom .4s linear;
 }
 
 .artistName:active {
     color: #7943A4;
     border-bottom: none;
-    transition:all .4s linear;
+    transition: color .4s linear, border .4s linear;
 }
 
 .artistName:focus {
     color: #000;
     border: 2px solid #9d5cd0;
-    transition: all .4s linear;
+    transition: color .4s linear, border .4s linear;
 }
 
 .artistName.active {

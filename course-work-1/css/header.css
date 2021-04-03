@@ -54,7 +54,7 @@
 
 .header-btn {
     color:#fff;
-    transition:all .4s linear;
+    transition:color .4s linear;
 }
 
 .header-btn:hover {
@@ -116,20 +116,20 @@
 }
 
 .header__form-search:focus-within {
-    transition:all .4s linear;
+    transition: .4s linear;
 }
 
 .header__btn:focus {
     background-color:#9d5cd0;
     border:3px solid #7943a4;
-    transition:all .4s linear;
+    transition: border .4s linear, background-color .4s linear;
 }
 
 .header__btn:hover,
 .header__btn:active {
     background-color:#7943a4;
     border:3px solid #d1a9f0;
-    transition:all .4s linear;
+    transition: border .4s linear, background-color .4s linear;
 }
 
 
@@ -161,41 +161,41 @@
 
     .burger > span#sp1{
         top: 0;
-        transition: all .3s .5s;
         width: 100%;
+        transition: width .3s linear, top .3s linear;
     }
 
     .burger > span#sp2{
         top: 7px;
-        transition: all .3s .3s;
         width: 73%;
+        transition: width .3s linear, top .3s linear;
     }
 
     .burger > span#sp3{
         top: 14px;
-        transition: all .3s .1s;
         width: 58%;
+        transition: width .3s linear, top .3s linear;
     }
 
     .burger.active > span#sp1{
         width: 90%;
         height: 90%;
         background-color: transparent;
-        transition: all .3s .1s;
+        transition: width .3s linear, top .3s linear, background-color .3s linear;   
     }
 
     .burger.active > span#sp2{
         width: 73%;
         top: 67px;
         transform: translateY(-60px) rotateZ(45deg);
-        transition: all .3s .3s;
+        transition: width .3s linear, top .3s linear, transform .3s linear;
     }
 
     .burger.active > span#sp3{
         width: 77%;
         top: 92px;
         transform: translateY(-85px) rotateZ(-45deg);
-        transition: all .3s .5s;
+        transition: width .3s linear, top .3s linear, transform .3s linear;
     }
 
     .header__menu {
@@ -279,27 +279,27 @@
 
     .burger > span#sp1{
         top: 0;
-        transition: all .3s .5s;
         width: 90%;
+        transition: top .3s linear, width .3s linear;
     }
 
     .burger > span#sp2{
         top: 12px;
-        transition: all .3s .3s;
         width: 70%;
+        transition: top .3s linear, width .3s linear;
     }
 
     .burger > span#sp3{
         top: 24px;
-        transition: all .3s .1s;
         width: 60%;
+        transition: top .3s linear, width .3s linear;
     }
 
     .burger.active > span#sp1{
         width: 90%;
         height: 90%;
         background-color: transparent;
-        transition: all .3s .1s;
+        transition: background-color .3s linear, width .3s linear;
     }
 
     .burger.active > span#sp2{
@@ -307,7 +307,7 @@
         top: 72px;
         background-color: #fff;
         transform: translateY(-60px) rotateZ(45deg);
-        transition: all .3s .3s;
+        transition: background-color .3s linear, width .3s linear, top .3s linear, transform .3s linear;
     }
     
     .burger.active > span#sp3{
@@ -315,7 +315,7 @@
         top: 97px;
         background-color: #fff;
         transform: translateY(-85px) rotateZ(-45deg);
-        transition: all .3s .5s;
+        transition: background-color .3s linear, width .3s linear, top .3s linear, transform .3s linear;
     }
 
     .navigation__list {
@@ -368,20 +368,20 @@
 
     .burger > span#sp1 {
         top: 0;
-        transition: all .3s .5s;
         width: 85%;
+        transition: width .3s linear, top .3s linear;
     }
 
     .burger > span#sp2 {
         top: 12px;
-        transition: all .3s .5s;
         width: 65%;
+        transition: width .3s linear, top .3s linear;
     }
 
     .burger > span#sp3 {
         top: 24px;
-        transition: all .3s .1s;
         width: 52%;
+        transition: width .3s linear, top .3s linear;
     }
     
 }
@@ -436,7 +436,7 @@
     .header__list-btn.menu-active .header__simplebar-content {
         opacity: 1;
         visibility: visible;
-        transition: all .6s;
+        transition: opacity .6s linear, visibility .6s linear;
     }
 
     .header__list-btn {
@@ -453,7 +453,7 @@
         padding: 40px 0 40px 40px;
         background: rgba(0,0,0,.4);
         opacity: 0;
-        transition: all .6s;
+        transition: opacity .6s linear, visibility .6s linear;
     }
 
     .navigation {
@@ -489,7 +489,7 @@
         background-color: transparent;
         border: 2px solid transparent;
         margin-right: 90px;
-        transition: all .4s linear;
+        transition: background-color .4s linear, border .4s linear;
     }
     
     .header__style::after {
@@ -513,24 +513,24 @@
     .header__style:hover {
         color: #9d5cd0;
         border: 2px solid #9d5cd0;
-        transition: all .4s linear;
+        transition: color .4s linear, border .4s linear;
     }
 
     .header__style:focus {
         color: #7943a4;
         border: 2px solid #7943a4; 
-        transition: all .4s linear;
+        transition: color .4s linear, border .4s linear;
     }
     
     .header__artist:hover {
-        transition: all .4s linear;
+        transition: .4s linear;
     }
 
     .header__artist:focus {
         outline: 1px solid #d1a9f0;
         background-color: #d1a9f0;
         opacity: .4;
-        transition: all .4s linear;
+        transition: outline .4s linear, opacity .4s linear, background-color .4s linear;
     }
     
     .header__style,
@@ -628,7 +628,7 @@
         background: linear-gradient(0deg, rgba(194, 131, 243, .4), rgba(194, 131, 243, .4)), url(.jpg);
         border: 2px solid #D1A9F0;
         box-sizing: border-box;
-        transition: all .4s linear;
+        transition: background .4s linear, border .4s linear;
     }
 
     .header__search-btn {
