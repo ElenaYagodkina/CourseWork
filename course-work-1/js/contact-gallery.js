@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //let screenWidth320 = window.matchMedia('(max-width: 320px)');
 
 if (document.documentElement.clientWidth > 300) {
-    document.querySelector('.project').after(document.querySelector('.contacts__heading'));
+    document.querySelector('.project-swiper').after(document.querySelector('.contacts__heading'));
 }
 
 if (document.documentElement.clientWidth < 700) {

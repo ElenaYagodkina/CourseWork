@@ -177,14 +177,12 @@
 
     .contacts__heading {
         margin-bottom: 18px;
-        padding-left: 14px;
         padding-top: 52px;
     }
 
     .contacts__address {
         font-size: 13px;
         margin-bottom: 19px;
-        padding-left: 14px;
         padding-top: 4px;
     }
 
@@ -198,7 +196,6 @@
     }
 
     .contacts__name {
-        padding-left: 14px;
         font-size: 18px;
     }
 
@@ -256,7 +253,6 @@
 
     .contacts__heading {
         margin-bottom: 21px;
-        padding-left: 46px;
         padding-top: 88px;
     }
 
@@ -322,10 +318,6 @@
         margin-left: 0;
     }
 
-    .contacts__heading {
-        padding-left: 46px;
-    }
-
     .contacts__connect {
         margin-bottom: 18px;
     }
@@ -359,7 +351,6 @@
 
     .contacts__heading {
         margin-bottom: 21px;
-        padding-left: 156px;
         padding-top: 88px;
     }
 
