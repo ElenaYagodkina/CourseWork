@@ -148,54 +148,17 @@
   background-image: url('../img/patnerNext.svg');
 }
 
-.project-slider:hover {
-  filter: none;
-  opacity: 1;
-  transition: .3s;
-}
-
-.project-slide1 {
-  background: url('../img/partners1.jpg');
-}
-
-.project-slide2 {
-  background: url('../img/partners2.jpg');
-}
-
-.project-slide3 {
-  background: url('../img/partners3.jpg');
-}
-
-.project-slide4 {
-  background: url('../img/partners4.jpg');
-}
-
-.project-slide5 {
-  background: url('../img/partners5.jpg');
-}
-
-.project-slide6 {
-  background: url('../img/partners6.jpg');
-}
-
-.project-slide7 {
-  background: url('../img/partners7.jpg');
-}
-
-.project-slide8 {
-  background: url('../img/partners8.jpg');
-}
-
-.project-slide9 {
-  background: url('../img/partners9.jpg');
-}
-
-.project-slider {
-  filter: grayscale(100%);
-  background-size: cover;
-  transition: .3s;
-  background-repeat: no-repeat;
+.partners-img {
   opacity: .5;
+  filter: grayscale(100%);
+  transition: opacity .3s linear;
+}
+
+.partners-img:hover,
+.partners-img:active {
+  opacity: 1;
+  filter: none;
+  transition: opacity .3s linear;
 }
 
 @media (min-width: 320px) {
@@ -208,17 +171,6 @@
     width: 290px;
     line-height: 32px;
   }
-/*
-  .tooltip {
-    bottom: 120%;
-    left: -80px;
-    min-width: 178px;
-    padding: 8px 14px;
-  }
-
-  .tooltip::after {
-    left: 80px;
-  } */
 
   .project-swiper {
     width: 195px;
@@ -228,7 +180,6 @@
 
   .project-slider {
     height: 65px;
-    background-size: cover;
   }
 
   .partners-heading {
@@ -240,7 +191,7 @@
   .partners-button-next {
     width: 30px;
     height: 30px;
-    top: -207px;
+    top: -45px;
     background-size: 12px 12px;
   }
 
@@ -262,8 +213,6 @@
 
   .project-slider {
     height: 106px;
-    background-position: center;
-    background-size: 100%;
   }
 
   .project__text {
@@ -277,10 +226,6 @@
     min-width: 228px;
     padding: 8px 14px;
   }
-/*
-  .tooltip::after {
-    left: 90px;
-  }*/
 
   .partners-heading {
     font-size: 24px;
@@ -290,7 +235,7 @@
 
   .partners-button-prev,
   .partners-button-next {
-    top: -227px;
+    top: -65px;
   }
 
   .partners-button-next {
@@ -317,12 +262,11 @@
 
   .project-slider {
     height: 128px;
-    background-size: cover;
   }
 
   .partners-button-prev,
   .partners-button-next {
-    top: -241px;
+    top: -79px;
   }
 
   .partners-heading {
@@ -355,7 +299,7 @@
   .partners-button-next {
     width: 30px;
     height: 30px;
-    top: -253px;
+    top: -90px;
   }
 
   .partners-button-next {

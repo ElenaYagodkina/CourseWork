@@ -297,6 +297,12 @@
     top: 38px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 @media (min-width: 320px) {
     .publications {
@@ -595,7 +601,7 @@
     }
 
     .publications-span {
-        right: -1%;
+        right: 0;
         top: 105%;
     }
 

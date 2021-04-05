@@ -1,7 +1,6 @@
 
 .contacts {
     position: relative;
-    border-top: 1px solid #cacaca;
 }
 
 .contacts-container {
@@ -10,6 +9,7 @@
     margin: 0;
     padding-right: 0;
     max-width: 100%;
+    border-top: 1px solid #cacaca;
 }
 
 .contacts__form {
@@ -20,6 +20,11 @@
 .input-form {
     border-radius: 100px;
     border: 1px solid #333333;
+}
+
+.input-form:focus {
+    outline: none;
+    border: 1px solid #9d5cd0;
 }
 
 .contacts__name {
@@ -169,7 +174,7 @@
         flex-direction: column-reverse;
     }
 
-    .contacts__content {
+    .contacts__left {
         margin: 0 auto;
         padding-top: 23px;
         width: 91%;
@@ -246,7 +251,7 @@
         padding-left: 50px;
     }
 
-    .contacts__content {
+    .contacts__left {
         padding-top: 125px;
         width: 382px;
     }
@@ -313,7 +318,7 @@
         justify-content: center;
     }
 
-    .contacts__content {
+    .contacts__left {
         margin-right: 54px;
         margin-left: 0;
     }
@@ -354,7 +359,7 @@
         padding-top: 88px;
     }
 
-    .contacts__content {
+    .contacts__left {
         margin-right: 139px;
         margin-left: 10px;
     }
