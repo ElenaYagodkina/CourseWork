@@ -36,19 +36,16 @@
   display: inline-block;
 }
 
-.tooltip-toggle {
-  background: url('../img/tooltip1.jpg') no-repeat;
-  background-size: cover;
-  width: 16px;
-  height: 16px;
-  transition: background .3s linear;
+.tooltip-toggle:hover svg,
+.tooltip-toggle:focus svg{
+  fill: #9d5cd0;
+  transition: fill .3s linear;
 }
 
-.tooltip-toggle:hover,
-.tooltip-toggle:focus {
-  background: url('../img/tooltip2.jpg') no-repeat;
-  background-size: cover;
-  transition: background .3s linear;
+.tooltip-toggle:hover svg .letter,
+.tooltip-toggle:focus svg .letter {
+  fill: #fff;
+  transition: fill .3s linear;
 }
 
 .tooltip-toggle:hover::before, .tooltip-toggle:hover::after,
@@ -149,6 +146,7 @@
 }
 
 .partners-img {
+  width: 100%;
   opacity: .5;
   filter: grayscale(100%);
   transition: opacity .3s linear;

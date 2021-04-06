@@ -172,6 +172,7 @@
 @media (min-width: 320px) {
     .contacts-container {
         flex-direction: column-reverse;
+        padding-left: calc((100% - 290px)/2);
     }
 
     .contacts__left {
@@ -248,7 +249,7 @@
 @media (min-width: 768px) {
     .contacts-container {
         flex-direction: row;
-        padding-left: 50px;
+        padding-left: calc((100% - 668px)/2);
     }
 
     .contacts__left {
@@ -316,6 +317,7 @@
 @media (min-width: 1024px) {
     .contacts-container {
         justify-content: center;
+        padding-left: calc((100% - 924px)/2);
     }
 
     .contacts__left {
@@ -351,12 +353,12 @@
 
 @media (min-width: 1900px) {
     .contacts-container {
-        padding-left: 150px;
+        padding-left: calc((100% - 1600px)/2);
     }
 
     .contacts__heading {
         margin-bottom: 21px;
-        padding-top: 88px;
+        padding-top: 83px;
     }
 
     .contacts__left {
@@ -375,7 +377,7 @@
     .input-form {
         width: 370px;
         height: 35px;
-        margin-bottom: 22px;
+        margin-bottom: 24px;
     }
 
     .myMap {
