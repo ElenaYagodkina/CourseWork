@@ -176,7 +176,6 @@
     }
 
     .contacts__left {
-        margin: 0 auto;
         padding-top: 23px;
         width: 91%;
     }
@@ -322,7 +321,6 @@
 
     .contacts__left {
         margin-right: 54px;
-        margin-left: 0;
     }
 
     .contacts__connect {
@@ -363,7 +361,6 @@
 
     .contacts__left {
         margin-right: 139px;
-        margin-left: 10px;
     }
 
     .contacts__form {
