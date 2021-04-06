@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-//let screenWidth320 = window.matchMedia('(max-width: 320px)');
-
 if (document.documentElement.clientWidth < 700) {
     document.querySelector('.contacts__heading').after(document.querySelector('.contacts__address'));
     document.querySelector('.contacts__heading').after(document.querySelector('.contacts__name'));
