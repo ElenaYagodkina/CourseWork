@@ -92,8 +92,8 @@ let mySwiper = new Swiper(slider1, {
         slidesPerColumnFill: 'row',
         updateOnWindowResize: true
       },
-      // when window width is >= 1920px
-      1920: {
+      // when window width is >= 1900px
+      1900: {
         slidesPerView: 3,
         slidesPerGroup: 3,
         spaceBetween: 50,
@@ -164,8 +164,8 @@ let mySwiper4 = function () {
           slidesPerColumnFill: 'row',
           updateOnWindowResize: true
         },
-        // when window width is >= 1920px
-        1920: {
+        // when window width is >= 1900px
+        1900: {
           slidesPerView: 3,
           slidesPerGroup: 3,
           spaceBetween: 50,
@@ -246,8 +246,8 @@ let mySwiper5 = new Swiper(slider5, {
       updateOnWindowResize: true
     },
 
-    // when window width is >= 1920px
-    1920: {
+    // when window width is >= 1900px
+    1900: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
