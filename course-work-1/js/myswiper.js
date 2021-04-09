@@ -119,7 +119,7 @@ function mobileSlider() {
 
       pagination: {
         el: '.events-pagination',
-        clickable: true,
+        clickable: true
       },
 		});
 
@@ -154,7 +154,10 @@ let mySwiper4 = function () {
           slidesPerGroup: 2,
           spaceBetween: 34,
           slidesPerColumnFill: 'row',
-          updateOnWindowResize: true
+          updateOnWindowResize: true,
+
+          //slidesOffsetBefore: 27
+          
         },
         // when window width is >= 1024px
         1024: {
@@ -175,7 +178,7 @@ let mySwiper4 = function () {
       }, 
 
         pagination: {
-          el: '.swiper-pagination',
+          el: '.publications__swiper-pagination',
           type: 'fraction'
         },
 
@@ -255,6 +258,7 @@ let mySwiper5 = new Swiper(slider5, {
     }
   }   
 });
+
 
 
 // events показать карточки 

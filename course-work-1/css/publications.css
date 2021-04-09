@@ -309,11 +309,11 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .publications__left {
-        padding-top: 53px;
+        padding-top: 52px;
     }
 
     .publications__heading {
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         color: #fff;
     }
 
@@ -322,8 +322,12 @@ input[type="number"]::-webkit-inner-spin-button {
         padding: 11px 0;
     }
 
+    .publications__checkbox-content {
+        flex-direction: column;
+    }
+
     .checkbox-select {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     .publications__form {
@@ -341,8 +345,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .checkbox-list-item {
         position: relative;
         display: block;
-        margin-bottom: 5px;
-        padding-bottom: 5px;
+        margin-bottom: 10px;
+        padding-bottom: 4px;
+        margin-top: -4px;
         width: 290px;
         color:#fff;
         border-bottom:1px solid rgba(255,255,255,0.5);
@@ -419,12 +424,16 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media (min-width: 768px) {
     .publications {
-        margin-bottom: 70px;
+        margin-bottom: 85px;
     }
 
     .publications__content {
         background: url('../img/publications768.jpg') no-repeat;
         background-position: center;
+    }
+
+    .publications__left {
+        padding-top: 86px;
     }
 
     .checkbox-list-item {
@@ -462,13 +471,12 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .publications-swiper {
-        padding-bottom: 315px;
+        padding-bottom: 302px;
         width: 614px;
     }
 
     .publications__heading {
         margin-bottom: 27px;
-        padding-top: 48px;
     }
 
     .checkbox-select {
@@ -482,7 +490,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .publications .slider-button {
         position: absolute;
         display: flex;
-        padding-top: 45px;
+        padding-top: 49px;
         z-index: 11;
     }
 
@@ -501,6 +509,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .checkbox-list:not(:last-child) {
         margin-right: 54px;
+    }
+
+    .checkbox-list-item {
+        margin-top: 0;
     }
 
     .publications__btn {
@@ -532,8 +544,15 @@ input[type="number"]::-webkit-inner-spin-button {
     .publications .swiper-pagination-fraction {
         position: static;
         display: block;
+        padding: 0 20px;
         font-size: 16px;
         width: auto;
+    }
+
+    .publications__swiper-pagination {
+        position: static;
+        width: 50px;
+        height: 20px;
     }
 }
 
@@ -562,6 +581,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .publications__left {
         margin-right: 18px;
+        padding-top: 86px;
     }
 
     .publications__checkbox-content {
@@ -605,11 +625,11 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .publications .slider-button {
-        padding-top: 14px;
+        padding-top: 115px;
     }
 
-    .publications__heading {
-        padding-top: 33px;
+    .publications .swiper-pagination-fraction {
+        padding: 0 20px;
     }
 
     .publications__text {
@@ -657,6 +677,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .publications-span {
         top: 107%;
+    }
+
+    .publications__text {
+        margin-bottom: 4%;
     }
 }
 

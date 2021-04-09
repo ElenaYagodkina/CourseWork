@@ -18,12 +18,6 @@ document.querySelector('.burger').addEventListener('click', function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () { 
-  if (document.documentElement.clientWidth < 1900) {
-      document.querySelector('.header__content-first').after(document.querySelector('.header__menu'));
-  }
-  });
-
 const btn = document.querySelectorAll('.header__style');
 const drop = document.querySelectorAll('.header__list-btn')
 

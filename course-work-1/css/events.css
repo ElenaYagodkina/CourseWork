@@ -100,7 +100,7 @@
 
 @media (min-width: 320px) {
     .events {
-        margin-bottom: 31px;
+        margin-bottom: 33px;
     }
 
     .events__heading {
@@ -173,7 +173,7 @@
 
 @media (min-width: 768px) {
     .events {
-        margin-bottom: 70px;
+        margin-bottom: 85px;
     }
 
     .events-swiper {
@@ -233,6 +233,10 @@
 }
 
 @media (min-width: 1024px) {
+    .events {
+        margin-bottom: 81px;
+    }
+    
     .events-swiper {
         width: 925px;
     }
@@ -274,11 +278,6 @@
     .events__text {
         width: 222px;
     }
-
-    .events__btn {
-        bottom: 50px;
-    }
-
 }
 
 @media (min-width: 1900px) {
@@ -318,6 +317,6 @@
     }
 
     .events__btn {
-        bottom: 42px;
+        bottom: 40px;
     }
 }
