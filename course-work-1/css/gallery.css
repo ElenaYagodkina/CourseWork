@@ -478,7 +478,7 @@
     }
 
     .gallery__select {
-        margin-bottom: 0;
+        margin-bottom: 107px;
         width: 100%;
     }
 
@@ -525,7 +525,6 @@
     }
 
     .slider-button.gallery-slider-button {
-        padding-top: 107px;
         justify-content: start;
     }
 
