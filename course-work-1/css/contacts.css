@@ -174,13 +174,13 @@
     }
 
     .contacts__left {
-        padding-top: 23px;
+        padding-top: 25px;
         width: 91%;
         padding-left: calc((100% - 290px)/2);
     }
 
     .contacts__heading {
-        margin-bottom: 18px;
+        margin-bottom: 16px;
         padding-top: 52px;
     }
 
@@ -191,12 +191,12 @@
     }
 
     .contacts__connect {
-        margin-bottom: 25px;
+        margin-bottom: 23px;
         font-size: 18px;
     }
 
     .connect-click {
-        margin-bottom: 17px;
+        margin-bottom: 14px;
     }
 
     .contacts__name {
@@ -216,7 +216,7 @@
     }
 
     .contacts__btn {
-        margin-bottom: 24px;
+        margin-bottom: 27px;
         border: 2px solid #9d5cd0;
         border-radius: 100px;
         width: 127px;
@@ -234,7 +234,7 @@
     }
 
     .contacts__social {
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
 
     .contacts__icon {
@@ -262,7 +262,7 @@
     }
 
     .contacts__connect {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         font-size: 24px;
     }
 
@@ -334,7 +334,7 @@
     .input-form {
         width: 306px;
         height: 35px;
-        margin-bottom: 24px;
+        margin-bottom: 23px;
         padding-left: 24px;
     }
 
@@ -349,7 +349,7 @@
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1920px) {
     .contacts__heading {
         margin-bottom: 21px;
         padding-top: 83px;

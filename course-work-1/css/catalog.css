@@ -189,7 +189,7 @@
 
 @media (min-width: 320px) {
     .catalog {
-        margin-bottom: 53px;
+        margin-bottom: 56px;
     }
     
     .catalog__heading-list {
@@ -315,6 +315,7 @@
 
     .ui-accordion .ui-accordion-content {
         padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .catalog__foto-artist {
@@ -334,6 +335,7 @@
 
     .catalog__accordion {
         width: 668px;
+        margin-bottom: 47px;
     }
 
     .accordion .catalog__accordion-item .catalog__btn {
@@ -372,7 +374,7 @@
 
 @media (min-width: 1024px) {
     .catalog {
-        margin-bottom: 80px;
+        margin-bottom: 34px;
     }
 
     .tablinks {
@@ -415,7 +417,7 @@
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1920px) {
     .catalog__heading {
         margin-right: 42px;
         margin-top: 5px;

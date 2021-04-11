@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.documentElement.clientWidth < 700) {
+    if (document.documentElement.clientWidth < 768) {
         document.querySelector('.contacts__heading').after(document.querySelector('.contacts__address'));
         document.querySelector('.contacts__heading').after(document.querySelector('.contacts__name'));
         document.querySelector('.slider2').after(document.querySelector('.gallery-slider-button'));
         editAccAdapt();
     }
 
-    if (document.documentElement.clientWidth < 1900) {
+    if (document.documentElement.clientWidth < 1920) {
         document.querySelector('.header__logo').after(document.querySelector('.header__form-search'));
         document.querySelector('.header__content-first').after(document.querySelector('.header__menu'));
     }
 
-    if (document.documentElement.clientWidth >= 1900) {
+    if (document.documentElement.clientWidth >= 1920) {
         document.querySelector('.header__navigation').after(document.querySelector('.header__form-search'));
         document.querySelector('.header__logo').after(document.querySelector('.header__menu'));
     }
@@ -25,18 +25,18 @@ window.onresize = function () {
     if (newWidth != oldWidth) {
         oldWidth = newWidth;
 
-        if (document.documentElement.clientWidth < 700) {
+        if (document.documentElement.clientWidth < 768) {
             document.querySelector('.contacts__heading').after(document.querySelector('.contacts__address'));
             document.querySelector('.contacts__heading').after(document.querySelector('.contacts__name'));
             document.querySelector('.slider2').after(document.querySelector('.gallery-slider-button'));
         }
         
-        if (document.documentElement.clientWidth < 1900) {
+        if (document.documentElement.clientWidth < 1920) {
             document.querySelector('.header__logo').after(document.querySelector('.header__form-search'));
             document.querySelector('.header__content-first').after(document.querySelector('.header__menu'));
         }
 
-        if (document.documentElement.clientWidth >= 1900) {
+        if (document.documentElement.clientWidth >= 1920) {
             document.querySelector('.header__navigation').after(document.querySelector('.header__form-search'));
             document.querySelector('.header__logo').after(document.querySelector('.header__menu'));
         }

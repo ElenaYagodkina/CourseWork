@@ -145,6 +145,12 @@
   background-image: url('../img/patnerNext.svg');
 }
 
+.partners-button-disabled {
+  opacity: .45;
+  cursor: auto;
+  pointer-events: none;
+}
+
 .partners-img {
   width: 100%;
   height: 100%;
@@ -275,7 +281,7 @@
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1920px) {
   .project__text {
     width: 1080px;
     margin-bottom: 22px;
