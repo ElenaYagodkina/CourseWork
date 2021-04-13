@@ -4,7 +4,7 @@ const slider3 = document.querySelector('.events-swiper');
 const slider4 = document.querySelector('.publications-swiper');
 const slider5 = document.querySelector('.project-swiper');
 
-const width = document.documentElement.clientWidth;
+let width = window.innerWidth;
 
 // slider hero
 

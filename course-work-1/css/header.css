@@ -178,8 +178,7 @@
     }
 
     .burger.active > span#sp1{
-        width: 90%;
-        height: 90%;
+        width: 0;
         background-color: transparent;
         transition: width .3s linear, top .3s linear, background-color .3s linear;   
     }
@@ -296,8 +295,6 @@
     }
 
     .burger.active > span#sp1{
-        width: 90%;
-        height: 90%;
         background-color: transparent;
         transition: background-color .3s linear, width .3s linear;
     }
