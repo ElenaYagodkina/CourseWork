@@ -19,7 +19,7 @@ let mySwiper = new Swiper(slider1, {
     effect: 'fade',
 });
 
-if ( width >= 1920) {
+if ( width >= 1025) {
   mySwiper.prependSlide([
     '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums3.jpg) no-repeat;"></div>',
     '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums2.jpg) no-repeat;"></div>',
@@ -28,7 +28,7 @@ if ( width >= 1920) {
   mySwiper.slideTo(0,0,false);
 }
 
-if ( width >= 1024 && width < 1920) {
+if ( width >= 768 && width < 1025) {
   mySwiper.prependSlide([
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-3.jpg) no-repeat;"></div>',
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-2.jpg) no-repeat;"></div>',
@@ -37,7 +37,7 @@ if ( width >= 1024 && width < 1920) {
   mySwiper.slideTo(0,0,false);
 }
 
-if ( width >= 768 && width < 1024) {
+if ( width > 320 && width < 768) {
   mySwiper.prependSlide([
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-3.jpg) no-repeat;"></div>',
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-2.jpg) no-repeat;"></div>',
@@ -46,7 +46,7 @@ if ( width >= 768 && width < 1024) {
   mySwiper.slideTo(0,0,false);
 }
 
-if ( width >= 320 && width < 768) {
+if ( width <= 320) {
   mySwiper.prependSlide([
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-3.jpg) no-repeat;"></div>',
     '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-2.jpg) no-repeat;"></div>',
