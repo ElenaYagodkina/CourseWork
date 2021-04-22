@@ -9,7 +9,8 @@ let width = window.innerWidth;
 // slider hero
 
 let mySwiper = new Swiper(slider1, {
-    slidesPerView: 1,
+  slidesPerView: 1,
+    
 
    autoplay: {
      delay: 10000,
@@ -21,9 +22,9 @@ let mySwiper = new Swiper(slider1, {
 
 if ( width >= 1025) {
   mySwiper.prependSlide([
-    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums3.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums2.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums.jpg) no-repeat;"></div>']);
+    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums3.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums2.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/birmingham-museums.jpg) no-repeat; background-size: cover;"></div>']);
   mySwiper.removeSlide([3,4,5]);
   mySwiper.slideTo(0,0,false);
 }
@@ -55,8 +56,6 @@ if ( width <= 320) {
   mySwiper.slideTo(0,0,false);
 }
 
-  
-
   // slider gallery
 
 let mySwiper1 = new Swiper(slider2, {
@@ -83,8 +82,8 @@ let mySwiper1 = new Swiper(slider2, {
       updateOnWindowResize: true
     },
 
-    // when window width is >= 768px
-    768: {
+    // when window width is >= 500px
+    500: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
@@ -110,7 +109,7 @@ let mySwiper1 = new Swiper(slider2, {
 let mySwiper3;
 
 function mobileSlider() {
-	if (width <= 767 && slider3.dataset.mobile == 'false') {
+	if (width <= 600 && slider3.dataset.mobile == 'false') {
 		mySwiper3 = new Swiper(slider3, {
 			slidesPerView: 1,
 			spaceBetween: 10,
@@ -126,7 +125,7 @@ function mobileSlider() {
 		slider3.dataset.mobile = 'true';
 	}
 
-	if (width >= 768) {
+	if (width > 600) {
 		slider3.dataset.mobile == 'false';
 		if (slider3.classList.contains('swiper-container-initialized')) {
 			mySwiper3.destroy();
@@ -145,15 +144,25 @@ window.addEventListener('resize', () => {
 // slider publications
 
 let mySwiper4 = function () {
-	if (width >= 768) {
+	if (width >= 321) {
 		let swiper4 = new Swiper(slider4, {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 34,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       slidesPerColumnFill: 'row',
       updateOnWindowResize: true, 
 
 			breakpoints: {
+
+
+        // when window width is >= 670px
+
+        670: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 34,
+          slidesPerColumnFill: 'row',
+          updateOnWindowResize: true
+        },
 
         // when window width is >= 1024px
         1024: {
@@ -191,7 +200,7 @@ let mySwiper4 = function () {
 		});
 
 		swiper4.on('resize', function () {
-			if (width <= 767) {
+			if (width <= 320) {
 				swiper4.destroy();
 			}
 		});

@@ -1,11 +1,14 @@
+.events {
+    margin-bottom: 81px;
+}
 
 .slider-container {
     overflow: hidden;
     width: 100%;
 }
 
-.slider3 {
-    flex-wrap: wrap;
+.events__heading {
+    margin-bottom: 20px;
 }
 
 .events-swiper {
@@ -13,11 +16,23 @@
     height: max-content;
 }
 
+.slider3 {
+    justify-content: initial;
+    flex-wrap: nowrap;
+}
+
 .events__card {
     position: relative;
+    width: 500px;
+    height: 700px;
+    margin-bottom: 50px;
+    flex-shrink: 0;
     border: 1px solid #cacaca;
     box-sizing: border-box;
-    margin-bottom: 50px;
+}
+
+.events__card:not(:nth-child(3n)) {
+    margin-right: 50px;
 }
 
 .btn-click {
@@ -35,6 +50,7 @@
 }
 
 .events__card-heading {
+    margin-bottom: 5px;
     line-height: 33px;
     font-weight: 600;
     font-size: 24px;
@@ -42,10 +58,15 @@
 
 .events__text {
     display: block;
+    width: 400px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: #333;
+}
+
+.events__card-info {
+    padding: 14px 17px 89px 50px;
 }
 
 .events__btn {
@@ -53,6 +74,7 @@
     position: absolute;
     border: 2px solid #fff;
     border-bottom: 1px solid  #9d5cd0;
+    bottom: 38px;
     padding: 0;
     padding-bottom: 3px;
     line-height: 23px;
@@ -78,6 +100,20 @@
     transition: outline .4s linear;
 }
 
+.toggler-btn {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: #9d5cd0;
+    background-color: transparent;
+    padding: 19px 35px;
+    border: 2px solid #9d5cd0;
+    border-radius: 30px;
+    transition: border .4s linear, color .4s linear;
+}
+
 .toggler-btn:hover {
     color:#fff;
     background-color:#9d5cd0;
@@ -97,96 +133,77 @@
     transition: background-color .4s linear, border .4s linear, color .4s linear;
 }
 
-
-@media (min-width: 320px) {
-    .events {
-        margin-bottom: 30px;
+@media (max-width: 1920px) {
+    .events__card {
+        width: calc(267px + 233.5*(100vw - 1025px)/895);   
     }
 
-    .events__heading {
-        margin-bottom: 15px;
+    .events__text {
+        width: calc(222px + 178*(100vw - 1025px)/895);
     }
-    
+
+    .events__card:not(:nth-child(3n)) {
+        margin-right: calc(26.5px + 22.5*(100vw - 1025px)/895);
+    }
+
+    .events__card-info {
+        padding: 14px 17px 89px 2.6vw;
+    }
+}
+
+@media (max-width: 1024px) {
     .events-swiper {
-        width: 290px;
+        width: calc(700px + 225*(100vw - 769px)/255);
     }
-    
+
     .events__img {
-        width: 290px;
+        width: 100%;
         height: 200px;
     }
 
-	.events__card {
-		flex-shrink: 0;
+    .events-span {
+        margin-top: -3px;
+    }
+
+    .events__card {
+        width: calc(217.4px + 72.87*(100vw - 769px)/255);
         height: 683px;
     }
 
     .events__card-heading {
-        margin-bottom: 37px;
+        width: calc(178px + 62*(100vw - 769px)/255);
+        font-size: calc(18px + 6*(100vw - 769px)/255);
+    }
+
+    .events__card:nth-child(even) {
+        margin-right: 27px;
+    }
+
+    .events__card-info {
+        padding: 16px 17px 89px 35px;
     }
 
     .events__text {
-        width: 235px;
+        width: calc(175px + 47*(100vw - 769px)/255);
+        font-size: calc(12px + 4*(100vw - 769px)/255);
     }
 
     .events__btn {
         bottom: 49px;
     }
-    
-    .toggler-btn {
-        display: none;
-    }
-
-	.slider3 {
-		justify-content: initial;
-		flex-wrap: nowrap;
-	}
-
-    .events__card-info {
-        padding: 11px 8px 89px 27px;
-    }
-
-    .events-span {
-        margin-bottom: 3px;
-    }
-
-    .events-pagination {
-        position: absolute;
-        margin-left: 90px;
-        margin-top: -34px;
-        transition: .3s opacity;
-        transform: translate3d(0,0,0);
-        z-index: 10;
-    }
-
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        margin-right: 15px;
-        background: #666;
-        opacity: .2;
-    }
-
-    .swiper-pagination-bullet-active {
-        width: 10px;
-        height: 10px;
-        background: #666;
-        opacity: 1;
-    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .events {
         margin-bottom: 85px;
     }
 
     .events-swiper {
-        width: 668px;
-        margin-top: 20px;
+        width: calc(530px + 138*(100vw - 600px)/168);
     }
 
     .events__card-info {
-        padding: 12px 17px 89px 33px;
+        padding: 15px 17px 89px 33px;
     }
 
     .events-span {
@@ -194,7 +211,10 @@
     }
 
     .events__card {
-        width: 317px;
+        width: calc(248px + 69*(100vw - 600px)/168);
+    }
+
+    .events__card:nth-child(even) {
         margin-right: 0;
     }
 
@@ -213,118 +233,110 @@
 
     .events__card-heading {
         margin-bottom: 2px;
-        width: 255px;
+        width: calc(200px + 55*(100vw - 600px)/168);
+        font-size: calc(20px + 4*(100vw - 600px)/168);
     }
 
     .events__text {
-        width: 243px;
+        width: calc(200px + 43*(100vw - 600px)/168);
+        font-size: 16px;
+        line-height: calc(26px + 6*(100vw - 600px)/168);
     }
 
     .events__btn {
         bottom: 48px;
     }
-
-    .toggler-btn {
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        font-size: 18px;
-        font-weight: 600;
-        color: #9d5cd0;
-        background-color: transparent;
-        padding: 17px 35px;
-        border: 2px solid #9d5cd0;
-        border-radius: 30px;
-        transition: border .4s linear, color .4s linear;
-
-    }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 600px) {
     .events {
-        margin-bottom: 81px;
+        margin-bottom: 46px;
+    }
+
+    .events-swiper {
+        width: calc(290px + 240*(100vw - 321px)/279);
+        margin: 0 auto;
+    }
+
+    .events__img {
+        width: 100%;
+    }
+
+    .events__card-heading {
+        margin-bottom: 37px;
+        font-size: 24px;
+        width: 325px;
+    }
+
+    .events__text {
+        width: calc(235px + 115*(100vw - 321px)/279);
+        line-height: 32px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        background: #666;
+        opacity: .2;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 10px;
+        height: 10px;
+        background: #666;
+        opacity: 1;
+    }
+
+    .toggler-btn {
+        display: none;
+    }
+
+    .events-pagination {
+        position: static;
+        margin-top: -34px;
+        transition: .3s opacity;
+        transform: translateX(7px);
+        z-index: 10;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .events__heading {
+        margin-bottom: 15px;
     }
     
     .events-swiper {
-        width: 925px;
+        width: 290px;
     }
-
+    
     .events__img {
         width: 290px;
         height: 200px;
     }
 
-    .events-span {
-        margin-top: -3px;
-    }
-
-    .events__card {
-        width: 290px;
+	.events__card {
         height: 683px;
     }
 
     .events__card-heading {
-        width: 240px;
-    }
-
-    .events__card:nth-child(even) {
-        margin-right: 27px;
-    }
-
-    .events__card:nth-child(odd) {
-        margin-right: 27px;
-    }
-
-    .events__card:nth-child(3) {
-        margin-right: 0;
-    }
-
-    .events__card-info {
-        padding: 14px 17px 89px 35px;
+        margin-bottom: 37px;
     }
 
     .events__text {
-        width: 222px;
-    }
-}
-
-@media (min-width: 1920px) {
-    .events-swiper {
-        width: 1600px;
-    }
-
-    .events__card {
-        width: 500px;
-        height: 700px;
-    }
-
-    .events__card:not(:nth-child(3n+3)) {
-        margin-right: 50px;
-    }
-
-    .events-swiper {
-        padding-top: 0;
-        width: 1600px;
-    }
-
-    .events__img {
-        width: 500px;
-        height: 300px;
-    }
-
-    .events__card-info {
-        padding: 14px 17px 89px 50px;
-    }
-
-    .events__card-heading {
-        width: 401px;
-    }
-
-    .events__text {
-        width: 400px;
+        width: 235px;
     }
 
     .events__btn {
-        bottom: 40px;
+        bottom: 50px;
+    }
+
+    .events__card-info {
+        padding: 13px 14px 89px 27px;
+    }
+
+    .events-span {
+        margin-bottom: 3px;
     }
 }

@@ -1,18 +1,151 @@
 .publications__content {
     position: relative;
+    background: url('../img/publications1920.jpg') no-repeat;
+    padding-bottom: 76px;
+    background-color: #000;
+    background-position: center;
 }
 
 .publications-container {
     display: flex;
+    flex-direction: row;
+}
+
+.publications {
+    margin-bottom: 88px;
+}
+
+.publications .swiper-container {
+    padding-top: 100px;
+}
+
+.publications__text {
+    margin-bottom: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    color: #fff;
+}
+
+.publications .slider-button {
+    position: absolute;
+    display: flex;
+    padding-top: 115px;
+    z-index: 11;
+}
+
+.publications .swiper-pagination-fraction {
+    position: static;
+    display: block;
+    padding: 0 20px;
+    font-size: 16px;
+    width: auto;
+}
+
+.publications__swiper-pagination {
+    position: static;
+    width: 50px;
+    height: 20px;
+}
+
+.slider4 {
+    top: 73px;
 }
 
 .publications__heading {
+    margin-bottom: 27px;
     color: #fff;
+}
+
+.checkbox-list-item {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: auto;
+    border-bottom: none;
+}
+
+.categories::before {
+    border-bottom: none;
+    border-left: none;
+}
+
+.categories {
+    display: block;
+    position: relative;
+    border: none;
+    margin-bottom: 6px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: text;
+    transition:background-color .4s linear;
+}
+
+.categories:hover {
+    color:#fff;
+    transition: color .4s linear;
+}
+
+.checkbox-select {
+    margin-bottom: 35px;
+}
+
+.publications-checkbox {
+    overflow: hidden;
+    padding-left: 2px;
+}
+
+.publications__form-price {
+    margin-bottom: 14px;
+}
+
+.publications__right {
+    position: relative;
+    width: 1120px;
+}
+
+.publications-swiper {
+    width: 1150px;
+    padding-bottom: 0;
+}
+
+.publications__card-heading {
+    padding-top: 415px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    width: 152px;
+    letter-spacing: .5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+}
+
+.publications__btn {
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+.publications-span {
+    right: 0;
+    top: 416px;
+    font-size: 16px;
+}
+
+.publications__checkbox-content {
+    flex-direction: column;
 }
 
 .publications__left {
     display: flex;
     flex-direction: column;
+    margin-right: 172px;
+    padding-top: 86px;
 }
 
 #check1, #check2, #check3,
@@ -65,17 +198,8 @@
     outline: 2px solid #7943A4;
 }
 
-.publications__right {
-    position: relative;
-}
-
 .publications__card-heading {
     font-weight: 600;
-    color: #fff;
-}
-
-.publications__text {
-    font-weight: 400;
     color: #fff;
 }
 
@@ -100,6 +224,7 @@
     margin: 0;
     box-sizing: border-box;
     cursor: pointer;
+    height: 390px;
 }
 
 .publications-slide1 {
@@ -148,15 +273,15 @@
 
 .publications-button-prev,
 .publications-button-next {
+    position: static;
     background-color: #666;
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: none;
+    border: 2px solid transparent;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 12px 12px;
-    position: static;
     z-index: 11;
     transition: background-color .4s linear, border .4s linear;
 }
@@ -166,12 +291,6 @@
 }
 .publications-button-next {
     background-image: url('../img/next.svg');
-}
-
-.publications-button-prev,
-.publications-button-next{
-    border: 2px solid transparent; 
-    transition:background-color .4s linear;
 }
 
 .publications-button-prev:hover,
@@ -208,6 +327,16 @@
     outline: 2px solid #7943a4;
 }
 
+.checkbox-text {
+    position: relative;
+    padding-left: 21px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    cursor: pointer;
+    transition: color .3s linear;
+}
+
 .checkbox-text::before {
     content: "";
     position: absolute;
@@ -229,16 +358,6 @@
     height: 4px;
     background-color: transparent;
     transform: translate(-50%,-50%);
-}
-
-.checkbox-text {
-    position: relative;
-    padding-left: 21px;
-    font-size: 16px;
-    line-height: 32px;
-    color: #fff;
-    cursor: pointer;
-    transition: color .3s linear;
 }
 
 .input-check:checked + .checkbox-text {
@@ -265,44 +384,11 @@
     border-top: none;
 }
 
-.categories {
-    display: block;
-    position: relative;
-    border: none;
-    font-weight: 700;
-    font-size: 16px;
-    color: #fff;
-    background: transparent;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-bottom: 1px solid rgba(255,255,255,0.5);
-    width: 100%;
-    text-align: left;
-    cursor: text;
-    transition:background-color .4s linear;
-}
-
-.categories::before {
-    content:"";
-    position: absolute;
-    right: 4px;
-    margin-top: 3px;
-    margin-left: 4px;
-    border-top: none;
-    border-right: none;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    width: 8px;
-    height: 8px;
-    transform: rotate(-45deg);
-}
-
 .publications-span {
     position: absolute;
     color: #fff;
-    font-size: 12px;
     font-family: 'OpenSans';
     font-weight: 300;
-    top: 38px;
 }
  
 input[type="number"]::-webkit-outer-spin-button,
@@ -310,14 +396,176 @@ input[type="number"]::-webkit-inner-spin-button {
 	display: none;
 }
 
+@media (max-width: 1920px) {
+    .publications__left {
+        margin-right: calc(40px + 132*(100vw - 1025px)/895);
+    }
 
-@media (min-width: 320px) {
+    .publications-swiper {
+        width: calc(600px + 550*(100vw - 1025px)/895);
+    }
+}
+
+@media (max-width: 1024px) {
     .publications {
-        margin-bottom: 55px;
+        margin-bottom: 85px;
+    }
+    
+    .publications-swiper {
+        padding-bottom: 302px;
+        width: calc(427px + 203*(100vw - 769px)/255);
+    }
+
+    .publications__content {
+        background: url('../img/publications1024.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 38px;
     }
 
     .publications__left {
-        padding-top: 54px;
+        margin-right: 18px;
+        padding-top: 82px;
+    }
+
+    .publications__heading {
+        margin-bottom: 29px;
+    }
+
+    .publications-checkbox {
+        padding-left: 2px;
+    }
+
+    .checkbox-text {
+        padding-left: 22px;
+    }
+
+    .publications__right {
+        width: 629px;
+    }
+
+    .publications__card-heading {
+        padding-top: 334px;
+
+    }
+
+    .publications__btn {
+        padding: 9px 20px;
+        letter-spacing: 1px;
+    }
+
+    .publications-slider {
+        height: 320px;
+    }
+
+    .publications-span {
+        top: 104%;
+    }
+
+    .publications__text {
+        margin-bottom: 18px;
+    }
+
+    .publications .slider-button {
+        padding-top: 111px;
+    }
+}
+
+@media (max-width: 768px) {
+    .publications-container {
+        flex-direction: column;
+    }
+
+    .publications__content {
+        background: url('../img/publications768.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 0px;
+    }
+
+    .publications__left {
+        margin-right: 0;
+        padding-top: 82px;
+    }
+
+    .publications__checkbox-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .checkbox-select {
+        margin-bottom: 31px;
+    }
+
+    .checkbox-list-item {
+        position: relative;
+        display: block;
+        color:#fff;
+        transition: color .4s linear;
+    }
+
+    .publications__form {
+        margin-bottom: 2px;
+    }
+
+    .publications__right {
+        width: 100%;
+    }
+
+    .publications-slider {
+        height: 320px;
+    }
+
+    .publications .slider-button {
+        padding-top: 51px;
+    }
+
+    .publications .swiper-container {
+        padding-top: 0;
+    }
+
+    .publications-swiper {
+        width: calc(290px + 324*(100vw - 321px)/447);
+    }
+
+    .slider4 {
+        top: 108px;
+    }
+
+    .checkbox-list:not(:last-child) {
+        margin-right: calc(33px + 25*(100vw - 321px)/447);
+    }
+
+    .publications__btn {
+        font-size: 16px;
+        left: 0;
+        padding: 8px 20px;
+        letter-spacing: 1px;
+    }
+
+    .publications__card-heading {
+        padding-top: 337px;
+        margin-bottom: 4px;
+    }
+    
+    .publications__text {
+        margin-bottom: 19px;
+        font-size: 16px;
+    }
+
+    .publications-span {
+        top: 105%;
+    }
+}
+
+@media (max-width: 320px) {
+    .publications {
+        margin-bottom: 55px;
+        padding-top: 0;
+    }
+
+    .publications__left {
+        padding-top: 52px;
     }
 
     .publications__heading {
@@ -326,8 +574,30 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .categories {
-        margin-bottom: 5px;
+        margin-bottom: 2px;
         padding: 11px 0;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .categories::before {
+        content:"";
+        position: absolute;
+        right: 4px;
+        margin-top: 3px;
+        margin-left: 4px;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        width: 8px;
+        height: 8px;
+        transform: rotate(-45deg);
+    }
+
+    .categories.active::before {
+        margin-top: 5px;
+        transform: rotate(135deg);
     }
 
     .publications__checkbox-content {
@@ -335,27 +605,18 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .checkbox-select {
-        margin-bottom: 14px;
+        margin-bottom: 20px;
     }
 
     .publications__form {
         margin-bottom: 2px;
     }
 
-    .publications__form-price {
-        margin-bottom: 14px;
-    }
-
-    .publications-container {
-        flex-direction: column;
-    }
-
     .checkbox-list-item {
         position: relative;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 4px;
         padding-bottom: 4px;
-        margin-top: -4px;
         width: 290px;
         color:#fff;
         border-bottom:1px solid rgba(255,255,255,0.5);
@@ -364,6 +625,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .publications-swiper {
         padding-bottom: 207px;
+        width: 100%;
     }
 
     .publications__content {
@@ -401,296 +663,23 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 3px;
         font-size: 12px;
         letter-spacing: .3px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
     }
 
     .publications-span {
+        font-size: 11px;
         top: 132%;
+        left: 0;
     }
     
     .publications__text {
         width: 130px;
         margin-bottom: 23%;
         font-size: 12px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
     }
     
     .publications__btn {
         font-size: 13px;
-        padding: 11px 35px;
-    }
-
-    .publications-checkbox {
-        overflow:hidden;
-        padding-left:2px;
-    }
-}
-
-@media (min-width: 768px) {
-    .publications {
-        margin-bottom: 85px;
-    }
-
-    .publications__content {
-        background: url('../img/publications768.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .publications__left {
-        padding-top: 86px;
-    }
-
-    .checkbox-list-item {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        width: auto;
-        border-bottom: none;
-    }
-
-    .categories:hover::before,
-    .categories:active::before {
-        border-bottom: none;
-        border-left: none;
-        transition: color .4s linear;
-    }
-
-    .categories::before {
-        border-bottom: none;
-        border-left: none;
-    }
-
-    .categories {
-        border: none;
-        margin-bottom: 8px;
-        padding: 0;
-    }
-
-    .publications__checkbox-content {
-        flex-direction: row;
-    }
-    
-    .categories:hover {
-        color:#fff;
-        transition: color .4s linear;
-    }
-
-    .publications-swiper {
-        padding-bottom: 302px;
-        width: 614px;
-    }
-
-    .publications__heading {
-        margin-bottom: 27px;
-    }
-
-    .checkbox-select {
-        margin-bottom: 31px;
-    }
-
-    .publications__form {
-        margin-bottom: 2px;
-    }
-
-    .publications .slider-button {
-        position: absolute;
-        display: flex;
-        padding-top: 49px;
-        z-index: 11;
-    }
-
-    .publications-slider {
-        height: 320px;
-    }
-
-    .publications-slider:nth-child(n+3) {
-        margin-top: 0;
-    }
-
-    .slider4 {
-        flex-wrap: nowrap;
-        top: 108px;
-    }
-
-    .checkbox-list:not(:last-child) {
-        margin-right: 58px;
-    }
-
-    .checkbox-list-item {
-        margin-top: 0;
-    }
-
-    .publications__btn {
-        font-size: 16px;
-        left: 0;
-        padding: 8px 20px;
-        letter-spacing: 1px;
-    }
-
-    .publications__card-heading {
-        padding-top: 115%;
-        margin-bottom: 4px;
-        font-size: 16px;
-        letter-spacing: .5px;
-    }
-    
-    .publications__text {
-        margin-bottom: 7%;
-        font-size: 16px;
-        width: 400px;
-    }
-
-    .publications-span {
-        font-size: 16px;
-        right: 0px;
-        top: 105%;
-    }
-
-    .publications .swiper-pagination-fraction {
-        position: static;
-        display: block;
-        padding: 0 20px;
-        font-size: 16px;
-        width: auto;
-    }
-
-    .publications__swiper-pagination {
-        position: static;
-        width: 50px;
-        height: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .publications {
-        margin-top: 81px;
-    }
-
-    .publications .swiper-container {
-        padding-top: 100px;
-    }
-
-    .publications-container {
-        flex-direction: row;
-    }
-
-    .publications-swiper {
-        padding-bottom: 0;
-    }
-
-    .publications__content {
-        background: url('../img/publications1024.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        padding-bottom: 77px;
-    }
-
-    .publications__left {
-        margin-right: 18px;
-        padding-top: 86px;
-    }
-
-    .publications__checkbox-content {
-        flex-direction: column;
-    }
-
-    .checkbox-select {
-        margin-bottom: 35px;
-    }
-
-    .checkbox-list:not(:last-child) {
-        margin-right: 0;
-    }
-
-    .publications__right {
-        width: 629px;
-    }
-
-    .publications__card-heading {
-        padding-top: 116%;
-        font-size: 16px;
-        width: 152px;
-    }
-
-    .publications__btn {
-        padding: 9px 20px;
-        letter-spacing: 1px;
-    }
-
-    .publications-swiper {
-        width: 630px;
-    }
-
-    .publications-slider {
-        height: 320px;
-    }
-
-    .publications-span {
-        right: 0;
-        top: 105%;
-    }
-
-    .publications .slider-button {
-        padding-top: 115px;
-    }
-
-    .publications .swiper-pagination-fraction {
-        padding: 0 20px;
-    }
-
-    .publications__text {
-        margin-bottom: 6%;
-    }
-
-    .slider4 {
-        top: 73px;
-    }
-}
-
-@media (min-width: 1920px) {
-    .publications__content {
-        background: url('../img/publications1920.jpg') no-repeat;
-        padding-bottom: 76px;
-        background-color: #000;
-        background-position: center;
-    }
-
-    .publications__left {
-        margin-right: 172px;
-    }
-
-    .publications__right {
-        width: 1120px;
-    }
-
-    .publications-swiper {
-        width: 1150px;
-    }
-
-    .publications-slider {
-        height: 390px;
-    }
-
-    .publications__card-heading {
-        padding-top: 119%;
-        margin-bottom: 5px;
-    }
-
-    .publications__btn {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .publications-span {
-        top: 107%;
-    }
-
-    .publications__text {
-        margin-bottom: 4%;
+        padding: 11px 31px;
     }
 }
 

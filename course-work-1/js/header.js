@@ -32,5 +32,32 @@ document.addEventListener('click', (e) => {
     && !e.target.classList.contains('header__simplebar-content')) {
       drop.forEach(el => {el.classList.remove(('menu-active'))})
     }
+    console.log(e.target);
+
+  if (!e.target.classList.contains('header__search-input') 
+      && !e.target.classList.contains('search-lupe')) {
+        document.querySelector('.header__form-search').classList.remove('active-search');
+        document.querySelector('.burger').classList.remove('active-search');
+        document.querySelector('.search-close').classList.remove('active-search');
+        document.querySelector('.header__logo').classList.remove('active-search');
+        document.querySelector('.header__search-input').classList.remove('active-search');
+      }
+
 });
+
+document.querySelector('.header__form-search').addEventListener('click', function(){
+    document.querySelector('.header__form-search').classList.add('active-search');
+    document.querySelector('.burger').classList.add('active-search');
+    document.querySelector('.search-close').classList.add('active-search');
+    document.querySelector('.header__logo').classList.add('active-search');
+    document.querySelector('.header__search-input').classList.add('active-search');
+})
+
+
+
+
+
+
+
+
 

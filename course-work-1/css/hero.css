@@ -1,12 +1,15 @@
 .hero {
+  margin-bottom: 205px;
   position: relative;
   z-index: 1;
 }
 
 .hero__slider-content {
   position: absolute;
+  top: -170px;
   width: 100%;
   z-index: -1;
+
 }
 
 .hero__heading {
@@ -23,6 +26,7 @@
 .hero-slider {
   background-size: cover;
   animation: backgroundAnimation 20s linear infinite;
+  height: 800px;
 }
 
 .hero-slide1 {
@@ -81,15 +85,127 @@
   transition: border-color 0.2s linear;
 }
 
-@media (min-width: 320px) {
+.swiper-container, .swiper-container-initialized {
+  height: 100%;
+}
+
+.hero__heading {
+  padding-top: 74px;
+  margin-bottom: 20px;
+  font-size: 72px;
+  width: 597px;
+}
+
+.hero__text {
+  width: 565px;
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 93px;
+  letter-spacing: .9px;
+}
+
+.hero__btn {
+  padding: 22px 32px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.slider1 {
+  width: 100%;
+}
+
+@media (max-width: 1920px) {
+  .hero__heading {
+    padding-top: 74px;
+    margin-bottom: 20px;
+    font-size: 72px;
+    width: 597px;
+  }
+
+  .hero__btn {
+    padding: 22px 32px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1024px) {
   .hero {
-    margin-bottom: 96px;
+    margin-bottom: 200px;
+  }
+  
+  .hero-slider {
+    height: 768px;
+  }
+
+  .hero__slider-content {
+    top: -100px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 87%;
+  }
+
+  .hero__heading {
+    padding-top: 112px;
+    margin-bottom: 13px;
+    width: 597px;
+    font-size: 72px;
+  }
+
+  .hero__text {
+    width: 656px;
+    margin: 0;
+    margin-bottom: 133px;
+  } 
+  
+  .hero__btn {
+    padding: 22px 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 201px;
+  }
+
+  .hero-slider {
+    height: 768px;
+  }
+
+  .swiper-container, .swiper-container-initialized {
+    height: 87%;
+  }
+
+  .hero__heading {
+    width: 76.17vw;
+    padding-top: 112px;
+    margin-bottom: 13px;
+    font-size: calc(31px + 41*(100vw - 320px)/447);
+  }
+
+  .hero__text {
+    width: calc(290px + 366*(100vw - 320px)/447);
+    margin-bottom: 133px;
+  } 
+  
+  .hero__btn {
+    padding: 22px 33px;
+    font-size: calc(12px + 6*(100vw - 320px)/447);
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    margin-bottom: 98px;
   }
 
   .hero-slider {
     height: 355px;
   }
-  .hero__container {text-align: center;}
+  .hero__container {
+    text-align: center;
+  }
 
   .hero__slider-content {
     top: -45px;
@@ -118,119 +234,8 @@
   }
 
   .hero__btn {
-    padding: 12px 23px;
+    padding: 11px 16px;
     font-size: 12px;
   }
   
-}
-
-@media (min-width: 768px) {
-  .hero {
-    margin-bottom: 201px;
-  }
-
-  .hero__slider-content {
-    top: -162px;
-  }
-
-  .hero-slider {
-    height: 768px;
-  }
-
-  .swiper-container, .swiper-container-initialized {
-    height: 87%;
-  }
-
-  .hero__container {
-    text-align: left;
-}
-
-  .hero__heading {
-    width: 585px;
-    font-size: 72px;
-    text-align: left;
-    padding-top: 50px;
-    margin: 0;
-    margin-bottom: 13px;
-  }
-
-  .hero__text {
-    width: 661px;
-    line-height: 30px;
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: .9px;
-    margin: 0;
-    margin-bottom: 133px;
-  }
-
-  .hero__btn {
-    padding: 22px 33px;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  
-}
-
-@media (min-width: 1024px) {
-  .hero-slider {
-    height: 768px;
-  }
-
-  .swiper-container, .swiper-container-initialized {
-    height: 87%;
-  }
-
-  .hero__heading {
-    padding-top: 48px;
-    width: 597px;
-    font-size: 72px;
-  }
-
-  .hero__text {
-    width: 656px;
-    line-height: 30px;
-    font-size: 18px;
-  }
-  
-}
-
-@media (min-width: 1920px) {
-  .hero {
-    margin-bottom: 205px;
-  }
-  
-  .hero-slider {
-    height: 800px;
-  }
-
-  .hero__slider-content {
-    top: -170px;
-  }
-
-  .swiper-container, .swiper-container-initialized {
-    height: 100%;
-  }
-
-  .hero__heading {
-    padding-top: 74px;
-    margin-bottom: 20px;
-    font-size: 72px;
-    width: 597px;
-  }
-
-  .hero__text {
-    width: 565px;
-    line-height: 30px;
-    font-size: 18px;
-    margin-bottom: 93px;
-  }
-
-  .hero__btn {
-    padding: 22px 35px;
-  }
-
-  .slider1 {
-    width: 100%;
-  }
 }

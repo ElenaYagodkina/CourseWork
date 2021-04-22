@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth < 321) {
+        document.querySelector('.slider2').after(document.querySelector('.gallery-slider-button'));
+        editAccAdapt();
+    }
+
     if (window.innerWidth < 768) {
         document.querySelector('.contacts__heading').after(document.querySelector('.contacts__address'));
         document.querySelector('.contacts__heading').after(document.querySelector('.contacts__name'));
-        document.querySelector('.slider2').after(document.querySelector('.gallery-slider-button'));
-        editAccAdapt();
     }
 
     if (window.innerWidth < 1025) {

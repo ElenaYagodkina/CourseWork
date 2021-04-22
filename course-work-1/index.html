@@ -61,17 +61,18 @@
 
 <body>
     <header class="header">
+        
             <div class="header__content-first">
+                <div class="container header__container-first">
                     <button aria-label="меню" id="burger" class="burger">
                       <span id="sp1"></span>
                       <span id="sp2"></span>
                       <span id="sp3"></span>
                     </button>
-                    <picture class="header__logo">
-                      <source srcset="./img/logo.png" media="(min-width: 1920px)">
-                      <source srcset="./img/logo1024-768.png" media="(min-width: 768px) and (max-width: 1919px)">
-                      <img src="./img/logo320.png" alt="логотип">
-                    </picture>
+
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="./img/logo.png" alt="логотип">
+                    </div>
                     
                     <div class="header__menu">
                         <nav class="navigation">
@@ -93,9 +94,15 @@
                             </svg>Войти
                         </button>
                     </div> 
+                    
+                    <div class="search-close">
+                        <svg class="search-close-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path fill="white" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                    </div>
+                </div> 
             </div>
 
             <div class="header__content-second">
+                <div class="container header__container-second">
                     <nav class="header__navigation">      
                         <ul class="header__list">
                             <li class="header__list-btn"><button class="header__style">Реализм</button>
@@ -165,7 +172,7 @@
                     </nav>
                 
                     <form class="header__form-search">
-                        <button class="header__search-btn" id="search-btn" aria-label="Поиск по сайту">
+                        <button type="button" class="header__search-btn" id="search-btn" aria-label="Поиск по сайту">
                         <svg class="search-lupe" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 22"
                             width="23" height="22">
                             <rect class="search-rect" fill="white"
@@ -177,6 +184,7 @@
                         </button>
                         <input type="text" class="header__search-input" id="header__search-input" placeholder="Поиск по сайту">
                     </form>
+                </div>
             </div> 
     </header>
 
@@ -309,10 +317,10 @@
                             <button class="tablinks btn-germany" aria-label="Немецкий"></button>
                         </li>
                         <li class="catalog__language">
-                            <button class="tablinks btn-italy" aria-label="Итальянский"></button>
+                            <button id="defaultOpen" class="tablinks btn-italy" aria-label="Итальянский"></button>
                         </li>
                         <li class="catalog__language">
-                            <button id="defaultOpen" class="tablinks btn-russian" aria-label="Русский"></button>
+                            <button class="tablinks btn-russian" aria-label="Русский"></button>
                         </li>
                         <li class="catalog__language">
                             <button class="tablinks btn-spain" aria-label="Испанский"></button>
@@ -332,7 +340,7 @@
 
                         <div class="catalog__info-artist">
                             <div class="catalog__foto-artist">
-                                <img src="img/simon.jpg" alt="Мармион Симон">
+                                <img class="foto-artist" src="img/simon.jpg" alt="Мармион Симон">
                             </div>
                             <h3 class="info-heading">Мармион Симон</h3>
                             <span class="date-artist">2 июня 1448 — 11 января 1494.</span>
@@ -2547,7 +2555,7 @@
                             <img class="events__img" src="img/events1.jpg" alt="Книжная гравюра в живом восприятии">
                             </picture>
                             <div class="events__card-info">
-                            <span class="events-span">Музей им. Щусева с<br>20 марта по 30 апреля</span>
+                            <span class="events-span">Музей им. Щусева<br>с 20 марта по 30 апреля</span>
                             <h3 class="events__card-heading">Книжная гравюра в живом восприятии</h3>
                             <p class="events__text">Один из ведущих флорентийских художников Кватроченто,
                                 основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. 
@@ -2907,11 +2915,9 @@
     <footer>
         <div class="footer__content">
             <div class="container footer__container">
-                <picture class="footer__logo">
-                    <source srcset="./img/footer-logo1920.png" media="(min-width: 1900px)">
-                    <source srcset="./img/footer-logo1024.png" media="(min-width: 768px) and (max-width: 1899px)">
-                    <img src="./img/footer-logo320.png" alt="логотип">
-                </picture>
+                <div class="footer__logo">
+                    <img class="header__logo-img" src="./img/footer-logo.png" alt="логотип">
+                </div>
 
                 <div class="footer__social">
                         <a class="footer__icon vkontakte" href="#" aria-label="вконтакте"></a>
