@@ -181,6 +181,7 @@
   width: 100%;
   height: 100%;
   opacity: .5;
+  object-fit: contain;
   filter: grayscale(100%);
   transition: opacity .3s linear;
 }
@@ -266,7 +267,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .project__heading {
     margin-bottom: 15px;
   }

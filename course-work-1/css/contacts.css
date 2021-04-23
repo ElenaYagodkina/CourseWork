@@ -320,7 +320,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .contacts__left {
         padding-top: 25px;
         width: 91%;
@@ -340,6 +340,7 @@
     .contacts__connect {
         margin-bottom: 23px;
         font-size: 18px;
+        letter-spacing: 0;
     }
 
     .connect-click {

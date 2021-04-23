@@ -722,7 +722,7 @@ nav ul ul ul {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 375px) {
     .header__container-first {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -760,8 +760,8 @@ nav ul ul ul {
     }
 
     .burger{
-        width: 20px;
-        height: 18px;
+        width: 24px;
+        height: 20px;
     }
 
     .burger > span{
@@ -793,15 +793,15 @@ nav ul ul ul {
     }
 
     .burger.active > span#sp2{
-        width: 73%;
-        top: 67px;
+        width: 82%;
+        top: 70px;
         transform: translateY(-60px) rotateZ(45deg);
         transition: width .3s linear, top .3s linear, transform .3s linear;
     }
 
     .burger.active > span#sp3{
-        width: 77%;
-        top: 92px;
+        width: 87%;
+        top: 95px;
         transform: translateY(-85px) rotateZ(-45deg);
         transition: width .3s linear, top .3s linear, transform .3s linear;
     }
@@ -816,7 +816,7 @@ nav ul ul ul {
     }
 
     .navigation__item {    
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
 
     .navigation__link {

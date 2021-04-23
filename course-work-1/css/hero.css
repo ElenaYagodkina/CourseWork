@@ -181,21 +181,21 @@
     width: 76.17vw;
     padding-top: 112px;
     margin-bottom: 13px;
-    font-size: calc(31px + 41*(100vw - 320px)/447);
+    font-size: calc(31px + 41*(100vw - 321px)/447);
   }
 
   .hero__text {
-    width: calc(290px + 366*(100vw - 320px)/447);
+    width: calc(290px + 366*(100vw - 321px)/447);
     margin-bottom: 133px;
   } 
   
   .hero__btn {
     padding: 22px 33px;
-    font-size: calc(12px + 6*(100vw - 320px)/447);
+    font-size: calc(12px + 6*(100vw - 321px)/447);
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .hero {
     margin-bottom: 98px;
   }

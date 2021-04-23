@@ -89,7 +89,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     .footer__content {
         padding-top: 21px;
     }
