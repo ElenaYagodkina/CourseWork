@@ -1,7 +1,6 @@
 window.onload = function () {
 
     
-
     let tablinksBtn = document.querySelectorAll('.tablinks'),
         tabcontentDiv = document.querySelectorAll('.tabcontent');
 
@@ -51,9 +50,17 @@ window.onload = function () {
 
                 let person = el.innerText;     
                 if (person === e.currentTarget.innerText) {       
-                    el.parentElement.style.display = "block";      
+                    el.parentElement.style.display = "block";
+
                     item.classList.add('active');           
-                } 
+                }
+                
+                if (window.innerWidth < 769) {
+                    el.parentElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });    
     }

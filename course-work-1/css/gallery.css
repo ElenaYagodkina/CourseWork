@@ -345,102 +345,188 @@
 }
 
 
-    .gallery {
-        margin-bottom: 87px;
-    }
+.gallery {
+    margin-bottom: 87px;
+}
 
-    .gallery__container {
-        flex-direction: row;
-    }
+.gallery__container {
+    flex-direction: row;
+}
 
-    .gallery__content {
-        padding-bottom: 80px;
-        padding-top: 0px;
-        background: url('../img/gallery1920.jpg') no-repeat;
-        background-color: #000;
-        background-position: center;
-    }
+.gallery__content {
+    padding-bottom: 80px;
+    padding-top: 0px;
+    background: url('../img/gallery1920.jpg') no-repeat;
+    background-color: #000;
+    background-position: center;
+}
 
-    .gallery__content-left {
-        width: 401px;
-        margin-right: 50px;
-        padding-top: 85px;
-    }
+.gallery__content-left {
+    width: 401px;
+    margin-right: 50px;
+    padding-top: 85px;
+}
 
-    .gallery__heading {
-        margin-bottom: 31px;
-    }
+.gallery__heading {
+    margin-bottom: 31px;
+}
 
-    .gallery-span {
-        margin-bottom: 15px;
-        letter-spacing: .4px;
-    }
+.gallery-span {
+    margin-bottom: 15px;
+    letter-spacing: .4px;
+}
 
-    .choices[data-type*=select-one] .choices__inner {
-        padding-bottom: 0;
-    }
+.choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 0;
+}
 
-    .gallery__select {
-        width: 400px;
-    }
+.gallery__select {
+    width: 400px;
+}
 
-    .choices__inner {
-        width: 382px;
-        min-height: 30px;
-    }
+.choices__inner {
+    width: 382px;
+    min-height: 30px;
+}
 
-    .choices__list--dropdown {
-        width: 397px;
-    }
+.choices__list--dropdown {
+    width: 397px;
+}
 
-    .gallery__text {
-        width: 385px;
-        line-height: 32px;
-        bottom: 70px;
-        letter-spacing: .4px;
-    }
+.gallery__text {
+    width: 385px;
+    line-height: 32px;
+    bottom: 70px;
+    letter-spacing: .4px;
+}
 
-    .gallery__content-right {
-        position: relative;
-    }
+.gallery__content-right {
+    position: relative;
+}
 
-    .gallery-swiper {
-        width: 1150px;
-        height: 100%;
-        overflow: hidden;
-    }
+.gallery-swiper {
+    width: 1150px;
+    height: 100%;
+    overflow: hidden;
+}
 
-    .slider2 {
-        max-height: 750px;
-        padding-top: 30px;
-    }
+.slider2 {
+    max-height: 750px;
+    padding-top: 30px;
+}
 
-    .gallery-slider {
-        height: 350px;
-        background-position: 0px -42px;
-    }
+.gallery-slider {
+    height: 350px;
+    background-position: 0px -42px;
+}
 
-    .gallery-slider:after {
-        width: 310px;
-        height: 310px;
-    }
+.gallery-slider:after {
+    width: 310px;
+    height: 310px;
+}
 
-    .gallery-button-prev,
-    .gallery-button-next {
-        position: static;
-    }
+.gallery-button-prev,
+.gallery-button-next {
+    position: static;
+}
 
-    .slider-button.gallery-slider-button {
-        justify-content: start;
-        padding-top: 107px;
-    }
+.slider-button.gallery-slider-button {
+    justify-content: start;
+    padding-top: 107px;
+}
 
-    .gallery .swiper-pagination-fraction {
-        position: static;
-        padding: 0 20px;
-        font-size: 16px;
-        width: auto;
-    }
+.gallery .swiper-pagination-fraction {
+    position: static;
+    padding: 0 20px;
+    font-size: 16px;
+    width: auto;
+}
+
+.modal-content {
+    position:relative;
+    display:flex;
+    height: 500px;
+    background-color:#fff;   
+}
+
+.gallery__modal {
+    opacity: 0;
+    visibility: hidden;
+    width: 900px;
+    height: 500px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .3s linear;
+}
+
+.modal-img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+    transition: opacity .3s linear;
+ }
+
+.gallery__modal.active-modal,
+.overlay.active-modal{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s linear;
+}
+
+.modal-info {
+    padding: 121px 55px 0 53px;
+}
+
+.modal-cross {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.modal-cross line {
+    pointer-events: none;
+}
+
+.modal__autor {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.modal__name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.modal__span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #969696;
+}
+
+.modal__text {
+    line-height: 31px;
+    padding-top: 38px;
+}
+
 @media (max-width: 1920px) {
     .gallery-swiper {
         width: calc(635px + 515*(100vw - 1025px)/895);
@@ -518,8 +604,27 @@
     }
 
     .gallery-slider:after {
-        width: 260px;
-        height: 250px;
+        width: calc(200px + 60*(100vw - 769px)/255);
+        height: calc(195px + 55*(100vw - 769px)/255);
+    }
+
+    .gallery__modal {
+        width: 594px;
+        height: 594px;
+    }
+
+    .modal-info {
+        padding: 123px 55px 0 30px;
+    }
+
+    .modal-img {
+        width: 264px;
+        margin-right: 20px;
+    }
+
+    .modal__text {
+        line-height: 32px;
+        padding-top: 35px;
     }
 }
 
@@ -596,6 +701,19 @@
 
     .slider-button.gallery-slider-button {
         padding-top: 0;
+    }
+
+    .gallery__modal {
+        width: 668px;
+    }
+
+    .modal-info {
+        padding: 123px 65px 0 30px;
+    }
+
+    .modal-img {
+        width: 301px;
+        margin-right: 20px;
     }
     
 }
@@ -683,5 +801,33 @@
 
     .gallery .swiper-pagination-fraction {
         padding: 0 13px;
+    }
+
+    .modal-content {
+        flex-direction: column;
+    }
+
+    .gallery__modal {
+        width: 290px;
+        height: 400px;
+    }
+
+    .modal-info {
+        padding: 18px 45px 0 19px;
+    }
+
+    .modal-img {
+        width: 290px;
+        height: 200px;
+        margin-right: 0;
+    }
+
+    .modal__text {
+        padding-top: 4px;
+    }
+
+    .modal-cross {
+        top: 9px;
+        right: 6px;
     }
 }

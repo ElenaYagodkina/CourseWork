@@ -66,7 +66,7 @@
 .header__list-btn.menu-active .header__simplebar-content {
     opacity: 1;
     visibility: visible;
-    transition: opacity .6s linear, visibility .6s linear;
+    transition: opacity .4s linear, visibility .4s linear;
 }
 
 .header__list-btn {
@@ -83,7 +83,7 @@
     padding: 40px 0 40px 40px;
     background: rgba(0,0,0,.4);
     opacity: 0;
-    transition: opacity .6s linear, visibility .6s linear;
+    transition: opacity .4s linear, visibility .4s linear;
 }
 
 .navigation {
@@ -582,6 +582,10 @@ nav ul ul ul {
         margin-right: 0px;
     }
 
+    .search-lupe path, .search-lupe rect {
+        pointer-events: none;
+    }
+
     .navigation {
         margin-bottom: 130px;
     }
@@ -816,11 +820,11 @@ nav ul ul ul {
     }
 
     .navigation__item {    
-        margin-bottom: 14px;
+        margin-bottom: 16px;
     }
 
     .navigation__link {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .header-btn {

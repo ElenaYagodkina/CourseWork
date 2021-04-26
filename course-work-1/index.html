@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/footer.css">
     
-    <script defer src="js/choices.min.js"></script>
+    <script defer src="lib/choices.min.js"></script>
     <script defer src="js/mychoices.js"></script>
     <script defer src="lib/swiper/swiper-bundle.min.js"></script>
     <script defer src="lib/swiper/swiper-bundle.js"></script>
@@ -50,9 +50,9 @@
     <script defer src="js/myaccordion.js"></script>
     <script defer src="js/catalog.js"></script>
     <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
-    <script defer src="js/just-validate.min.js"></script>
-    <script defer src="js/inputmask.min.js"></script>
-    <script defer src="js/simplebar.js"></script>
+    <script defer src="lib/just-validate.min.js"></script>
+    <script defer src="lib/inputmask.min.js"></script>
+    <script defer src="lib/simplebar.js"></script>
     <script defer src="js/myMap.js"></script>
     <script defer src="js/forma.js"></script> 
     <script defer src="js/header.js"></script>
@@ -265,36 +265,36 @@
                             
                             <div class="swiper-wrapper slider2">
 
-                                <div class="swiper-slide gallery-slider gallery-slide1"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide2"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide3"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide4"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide5"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide6"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide7"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide8"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide9"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide10"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide11"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide12"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide13"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide14"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide15"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide16"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide17"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide18"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide19"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide20"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide21"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide22"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide23"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide24"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide25"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide26"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide27"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide28"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide29"></div>
-                                <div class="swiper-slide gallery-slider gallery-slide30"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide1" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide2" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide3" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide4" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide5" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide6" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide7" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide8" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide9" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide10" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide11" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide12" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide13" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide14" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide15" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide16" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide17" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide18" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide19" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide20" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide21" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide22" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide23" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide24" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide25" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide26" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide27" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide28" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide29" data-modal="1"></div>
+                                <div class="swiper-slide gallery-slider gallery-slide30" data-modal="1"></div>
                                 
                             </div>
                             
@@ -303,6 +303,26 @@
                     
                 </div>
             </div>
+  
+            <div class="overlay">
+                <div class="gallery__modal" data-modal="1">
+                    <div class="modal-content"> 
+                        <img src="./img/gallery2.jpg" alt="Женщина с граблями" class="modal-img">
+                        <div class="modal-info">
+                            <h2 class="modal__autor">Казимир Малевич</h2>
+                            <h3 class="modal__name">"Женщина с граблями"</h3>
+                            <span class="modal__span">1931-1932</span>
+                            <p class="modal__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. 
+                                Художник принялся за её создание в 1930-1931 годах, после того, 
+                                как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 
+                                году.
+                            </p>
+                        </div>   
+                    </div> 
+                    <svg class="modal-cross js-modal-close" viewPort="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"> <line x1="1" y1="16" x2="16" y2="1" stroke="black" stroke-width="2"/><line x1="1" y1="1" x2="16" y2="16" stroke="black" stroke-width="2"/></svg>
+                </div>
+            </div>
+            
         </section>
 
         <section id="catalog" class="catalog">
@@ -2895,7 +2915,7 @@
                         <h3 class="contacts__name">Шоурум №4</h3>
                         <span class="contacts__address">Леонтьевский переулок, дом 5, строение 1</span>
                         <h3 class="contacts__connect">Заказать обратный звонок</h3>
-                        <form class="contacts__form" autocomplete="on" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+                        <form class="contacts__form" autocomplete="on" method="POST" action="mail.php">
                         <input class="input-form" type="text" name="name" placeholder="Имя*" data-validate-field="name">
                         <input class="input-form" type="tel" name="phone" placeholder="Телефон*" data-validate-field="tel">
                         <button class="contacts__btn" type="submit" aria-label="Заказать обратный звонок">Заказать</button>

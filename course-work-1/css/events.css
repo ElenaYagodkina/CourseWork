@@ -265,7 +265,7 @@
     .events__card-heading {
         margin-bottom: 37px;
         font-size: 24px;
-        width: 325px;
+        width: calc(250px + 75*(100vw - 321px)/279);;
     }
 
     .events__text {
@@ -298,8 +298,7 @@
         transition: .3s opacity;
         transform: translateX(7px);
         z-index: 10;
-    }
-    
+    }   
 }
 
 @media (max-width: 375px) {

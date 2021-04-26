@@ -144,7 +144,7 @@ window.addEventListener('resize', () => {
 // slider publications
 
 let mySwiper4 = function () {
-	if (width >= 321) {
+	if (width >= 376) {
 		let swiper4 = new Swiper(slider4, {
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -200,7 +200,7 @@ let mySwiper4 = function () {
 		});
 
 		swiper4.on('resize', function () {
-			if (width <= 320) {
+			if (width <= 375) {
 				swiper4.destroy();
 			}
 		});

@@ -1,7 +1,7 @@
-var burger = "";
+let burger = "";
 document.addEventListener("DOMContentLoaded", function() {
-  burger = document.getElementById('burger')
-  burger.onclick = toggleBurger
+  burger = document.getElementById('burger');
+  burger.onclick = toggleBurger;
 });
 function toggleBurger() {
   if(burger.classList.contains("active")){
@@ -10,7 +10,6 @@ function toggleBurger() {
     burger.classList += " active";
   }
 }
-
 
 document.querySelector('.burger').addEventListener('click', function () {
   const div = document.querySelector('.header__menu')
@@ -22,17 +21,17 @@ const btn = document.querySelectorAll('.header__style');
 const drop = document.querySelectorAll('.header__list-btn')
 
 btn.forEach((selectedbtn) => 
-  selectedbtn.onclick = function(){
-    drop.forEach(el => {el.classList.remove(('menu-active'))})
+  selectedbtn.addEventListener ('click', function() {
+    drop.forEach(el => {el.classList.remove('menu-active')})
     this.parentElement.classList.toggle('menu-active');
-})
+  })
+)
 
 document.addEventListener('click', (e) => {
   if (!e.target.classList.contains('header__style') 
     && !e.target.classList.contains('header__simplebar-content')) {
-      drop.forEach(el => {el.classList.remove(('menu-active'))})
+      drop.forEach(el => {el.classList.remove('menu-active')})
     }
-    console.log(e.target);
 
   if (!e.target.classList.contains('header__search-input') 
       && !e.target.classList.contains('search-lupe')) {
@@ -42,7 +41,6 @@ document.addEventListener('click', (e) => {
         document.querySelector('.header__logo').classList.remove('active-search');
         document.querySelector('.header__search-input').classList.remove('active-search');
       }
-
 });
 
 document.querySelector('.header__form-search').addEventListener('click', function(){

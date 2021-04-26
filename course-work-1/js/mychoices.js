@@ -27,7 +27,7 @@ const editAccAdapt = function () {
   let accEditContent = document.querySelector('.publications-checkbox'),  // контент, содержащий добавляющиеся элементы .checkbox-label
       accEditTitle = document.querySelector('.categories');   // кнопка 
 
-  let accordeonActiveit = function () {
+  let accordionActive = function () {
     let publicationsCheckboks = document.querySelector('.checkbox-select');
 
     accEditContent.style.maxHeight = '0px';
@@ -52,6 +52,6 @@ const editAccAdapt = function () {
       }
     })
   }
-  accordeonActiveit();
+  accordionActive();
 };
 
