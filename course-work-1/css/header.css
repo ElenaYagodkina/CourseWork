@@ -652,7 +652,7 @@ nav ul ul ul {
     }
 
     .header__logo {
-        margin-right: calc(80px + 131*(100vw - 320px)/447);
+        margin-right: calc(80px + 131*(100vw - 321px)/447);
     }
 
     .burger > span{

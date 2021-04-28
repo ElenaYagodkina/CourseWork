@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('click', function(e) {
-        modalElem = document.querySelectorAll('.gallery__modal');
+        let modalElem = document.querySelectorAll('.gallery__modal');
 
 		if (e.target == modalOverlay || e.target == modalClose) {
 			modalOverlay.classList.remove('active-modal');

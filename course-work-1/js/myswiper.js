@@ -31,27 +31,27 @@ if ( width >= 1025) {
 
 if ( width >= 768 && width < 1025) {
   mySwiper.prependSlide([
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-3.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-2.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-1.jpg) no-repeat;"></div>']);
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-3.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-2.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham1024-1.jpg) no-repeat; background-size: cover;"></div>']);
   mySwiper.removeSlide([3,4,5]);
   mySwiper.slideTo(0,0,false);
 }
 
-if ( width > 320 && width < 768) {
+if ( width > 551 && width < 768) {
   mySwiper.prependSlide([
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-3.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-2.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-1.jpg) no-repeat;"></div>']);
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-3.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-2.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham768-1.jpg) no-repeat; background-size: cover;"></div>']);
   mySwiper.removeSlide([3,4,5]);
   mySwiper.slideTo(0,0,false);
 }
 
-if ( width <= 320) {
+if ( width <= 550) {
   mySwiper.prependSlide([
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-3.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-2.jpg) no-repeat;"></div>',
-    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-1.jpg) no-repeat;"></div>']);
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-3.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-2.jpg) no-repeat; background-size: cover;"></div>',
+    '<div class="swiper-slide hero-slider" style="background: url(./img/brimingham320-1.jpg) no-repeat; background-size: cover;"></div>']);
   mySwiper.removeSlide([3,4,5]);
   mySwiper.slideTo(0,0,false);
 }

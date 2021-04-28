@@ -359,7 +359,7 @@
     }
 
     .catalog__text {
-        width: calc(290px + 379*(100vw - 321px)/447);
+        width: calc(290px + 379*(100vw - 376px)/392);
         margin-bottom: 0px;
     }
 
@@ -369,20 +369,20 @@
     }
 
     .catalog__info-artist {
-        width: calc(290px + 75*(100vw - 321px)/447);
+        width: calc(290px + 75*(100vw - 376px)/392);
     }
 
     .catalog__foto-artist {
-        width: calc(290px + 378*(100vw - 321px)/447);
-        height: calc(181px + 238*(100vw - 321px)/447);
+        width: calc(290px + 378*(100vw - 376px)/392);
+        height: calc(181px + 238*(100vw - 376px)/392);
     }
 
     .catalog__about-artist {
-        width: calc(290px + 377*(100vw - 321px)/447);
+        width: calc(290px + 377*(100vw - 376px)/392);
     }
 
     .catalog__accordion {
-        width: calc(290px + 378*(100vw - 321px)/447);
+        width: calc(290px + 378*(100vw - 376px)/392);
         margin-bottom: 47px;
     }   
 

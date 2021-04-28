@@ -488,7 +488,7 @@
 }
 
 .modal-info {
-    padding: 121px 55px 0 53px;
+    padding: 121px 55px 30px 53px;
 }
 
 .modal-cross {
@@ -614,12 +614,11 @@
     }
 
     .modal-info {
-        padding: 123px 55px 0 30px;
+        padding: 123px 55px 20px 30px;
     }
 
     .modal-img {
         width: 264px;
-        margin-right: 20px;
     }
 
     .modal__text {
@@ -650,7 +649,7 @@
     }
 
     .choices__list {
-        width: 278px;
+        width: 287px;
     }
 
     .gallery__select {
@@ -671,10 +670,10 @@
     }
 
     .gallery__text {
-        width: calc(280px + 388*(100vw - 321px)/447);
+        width: calc(280px + 388*(100vw - 376px)/392);
         line-height: 32px;
-        bottom: calc(20px + 50*(100vw - 321px)/447);
-        font-size: calc(12px + 4*(100vw - 321px)/447);
+        bottom: calc(20px + 50*(100vw - 376px)/392);
+        font-size: calc(12px + 4*(100vw - 376px)/392);
     }
 
     .gallery-slider {
@@ -683,11 +682,11 @@
     }
 
     .gallery-swiper {
-        width: calc(280px + 388*(100vw - 321px)/447);
+        width: calc(280px + 388*(100vw - 376px)/392);
     }
 
     .gallery-slider:after {
-        width: calc(270px + 25*(100vw - 321px)/447);
+        width: calc(270px + 25*(100vw - 376px)/392);
         height: 260px;
     }
 
@@ -704,18 +703,47 @@
     }
 
     .gallery__modal {
-        width: 668px;
+        width: calc(290px + 378*(100vw - 376px)/392);
     }
 
     .modal-info {
-        padding: 123px 65px 0 30px;
+        padding: 123px 65px 20px 30px;
     }
 
     .modal-img {
         width: 301px;
-        margin-right: 20px;
     }
     
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+        flex-direction: column;
+    }
+
+    .gallery__modal {
+        width: 290px;
+        height: 600px;
+    }
+
+    .modal-info {
+        padding: 18px 25px 22px 19px;
+    }
+
+    .modal-img {
+        width: 290px;
+        height: 200px;
+        margin-right: 0;
+    }
+
+    .modal__text {
+        padding-top: 4px;
+    }
+
+    .modal-cross {
+        top: 9px;
+        right: 6px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -801,33 +829,5 @@
 
     .gallery .swiper-pagination-fraction {
         padding: 0 13px;
-    }
-
-    .modal-content {
-        flex-direction: column;
-    }
-
-    .gallery__modal {
-        width: 290px;
-        height: 400px;
-    }
-
-    .modal-info {
-        padding: 18px 45px 0 19px;
-    }
-
-    .modal-img {
-        width: 290px;
-        height: 200px;
-        margin-right: 0;
-    }
-
-    .modal__text {
-        padding-top: 4px;
-    }
-
-    .modal-cross {
-        top: 9px;
-        right: 6px;
     }
 }

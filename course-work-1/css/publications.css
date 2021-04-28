@@ -525,7 +525,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .publications-swiper {
-        width: calc(290px + 324*(100vw - 321px)/447);
+        width: calc(290px + 324*(100vw - 376px)/392);
     }
 
     .slider4 {
@@ -533,7 +533,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 
     .checkbox-list:not(:last-child) {
-        margin-right: calc(33px + 25*(100vw - 321px)/447);
+        margin-right: calc(33px + 25*(100vw - 376px)/392);
     }
 
     .publications__btn {

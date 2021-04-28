@@ -263,17 +263,17 @@
     .contacts__left {
         width: 380px;
         margin-right: 0;
-        padding-left: calc(25px + 25*(100vw - 321px)/477);
+        padding-left: calc(25px + 25*(100vw - 376px)/392);
     }
 
     .contacts__connect {
         margin-bottom: 19px;
-        font-size: calc(18px + 6*(100vw - 321px)/477);
+        font-size: calc(18px + 6*(100vw - 376px)/392);
         letter-spacing: .3px;
     }
 
     .input-form {
-        width: calc(250px + 60*(100vw - 321px)/477);
+        width: calc(250px + 60*(100vw - 376px)/392);
         margin-bottom: 24px;
     }
 

@@ -230,7 +230,7 @@
 
 @media (max-width: 768px) {
   .project-swiper {
-    width: calc(175px + 387*(100vw - 321px)/447);
+    width: calc(175px + 387*(100vw - 376px)/392);
   }
 
   .project-slider {
@@ -239,7 +239,7 @@
 
   .project__text {
     margin-bottom: 26px;
-    width: calc(290px + 369*(100vw - 321px)/447);
+    width: calc(290px + 369*(100vw - 376px)/392);
     font-size: 16px;
   }
 

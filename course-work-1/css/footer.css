@@ -74,7 +74,7 @@
 
 @media (max-width: 768px) {
     .footer__logo {
-        width: calc(97px + 76*(100vw - 321px)/447);
+        width: calc(97px + 76*(100vw - 376px)/392);
     }
 }
 
