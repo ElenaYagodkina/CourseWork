@@ -719,9 +719,11 @@
 @media (max-width: 700px) {
     .modal-content {
         flex-direction: column;
+        height: 600px;
     }
 
     .gallery__modal {
+        top: 5%;
         width: 290px;
         height: 600px;
     }
